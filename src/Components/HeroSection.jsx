@@ -5,7 +5,7 @@ import { SiDell } from "react-icons/si";
 
 const HeroSection = () => {
   return (
-    <section className="max-w-7xl mx-auto px-8 py-16 grid lg:grid-cols-2 gap-12 items-center">
+    <section className="mx-auto px-8 py-16 grid lg:grid-cols-2 gap-12 items-center">
       <div>
         <h1 className="md:text-6xl text-4xl text-nowrap font-extrabold leading-[1.1] mb-8">
           YOUR <span className="text-[#07BEC8] italic">PARTNER</span> FOR
@@ -41,7 +41,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="flex relative justify-center">
-        <div className="absolute  bg-[#09a2aacc] p-1 rounded-full left-20 top-5">
+        <div className="absolute cursor-pointer z-20 active:scale-105 hover:scale-95 duration-300 transition-all bg-[#09a2aacc] p-1 rounded-full left-20 top-5">
           <div className="p-1 bg-[#07bec8c0] m-1 rounded-full">
             <div className="p-3 bg-[#04e1ec] m-1 rounded-full">
               <BsArrowUpRight size={20} className="rotate-90 font-bold" />

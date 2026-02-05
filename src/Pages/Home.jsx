@@ -12,6 +12,7 @@ import {
 import { BiCodeAlt, BiLayer, BiMobileAlt, BiShieldAlt } from "react-icons/bi";
 import NavBar from "../Components/NavBar";
 import HeroSection from "../Components/HeroSection";
+import OurTeamSection from '../Components/OurTeamSection'
 
 const HomePage = () => {
   const [openFaq, setOpenFaq] = useState(0);
@@ -23,7 +24,8 @@ const HomePage = () => {
 
       {/* --- HERO SECTION --- */}
       <HeroSection />
-
+ {/* Our Teams */}
+      <OurTeamSection/>
       {/* --- SERVICES GRADIENT BOX --- */}
       <section className="max-w-7xl mx-auto px-8 py-20">
         <div className="bg-linear-to-r from-purple-600 via-purple-400 to-[#fde68a] rounded-tl-[60px] rounded-br-[60px] p-12 text-black">
