@@ -5,7 +5,7 @@ import { SiDell } from "react-icons/si";
 
 const HeroSection = () => {
   return (
-    <section className="mx-auto px-8 py-16 grid lg:grid-cols-2 gap-12 items-center">
+    <section className="px-8 py-16 flex justify-center items-center md:flex-row flex-col gap-10">
       <div>
         <h1 className="md:text-6xl text-4xl text-nowrap font-extrabold leading-[1.1] mb-8">
           YOUR <span className="text-[#07BEC8] italic">PARTNER</span> FOR
@@ -28,10 +28,10 @@ const HeroSection = () => {
         <div className="Text">
           <p className="text-sm text-gray-400">
             Our team of experts is ready to assist you with tailored IT
-            solutions that meet your unique business needs. Whether you're
-            facing technical challenges or seeking to enhance your IT
-            infrastructure, we're here to help. Contact us today to discuss how
-            we can support your business growth and success.
+            solutions <br /> that meet your unique  business needs. Whether you're
+            facing technical <br /> challenges or seeking  to enhance your IT
+            infrastructure, we're here to <br /> help. Contact us today to discuss how
+            we can support your business <br /> growth and success.
           </p>
         </div>
         <div className="BrandsThreee w-full flex items-center sm:gap-12 gap-6 mt-12 text-8xl text-gray-500">

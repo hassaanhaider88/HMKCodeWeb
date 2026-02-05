@@ -32,7 +32,7 @@ const OurTeamSection = () => {
     },
   ];
   return (
-    <div className="min-h-screen px-16 py-12 md:px-5 md:py-4 w-full rounded-3xl">
+    <div className="min-h-screen px-16 py-6 md:px-5 md:py-10 w-full rounded-3xl">
       <div className="OurTaemCard  relative w-full bg-red-50 h-full ">
         <div
           style={{ borderRadius: "0px 0px 0px 100px" }}

@@ -5,7 +5,7 @@ import { FiArrowRight, FiCheckCircle } from "react-icons/fi";
 
 const LeadingSolutionSection = () => {
   return (
-    <section className="max-w-7xl mx-auto px-8  mt-10">
+    <section className="px-8  mt-10">
       <div className="bg-linear-to-r from-[#8C4DF6] text-white via-[#A36BEA] to-[#04E1EC] relative rounded-2xl p-12 ">
         <div
           style={{ borderRadius: "0px 0px 100px 0px" }}
