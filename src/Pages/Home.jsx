@@ -12,7 +12,8 @@ import {
 import { BiCodeAlt, BiLayer, BiMobileAlt, BiShieldAlt } from "react-icons/bi";
 import NavBar from "../Components/NavBar";
 import HeroSection from "../Components/HeroSection";
-import OurTeamSection from '../Components/OurTeamSection'
+import OurTeamSection from "../Components/OurTeamSection";
+import LeadingSolutionSection from "../Components/LeadingSolutionSection";
 
 const HomePage = () => {
   const [openFaq, setOpenFaq] = useState(0);
@@ -24,67 +25,10 @@ const HomePage = () => {
 
       {/* --- HERO SECTION --- */}
       <HeroSection />
- {/* Our Teams */}
-      <OurTeamSection/>
-      {/* --- SERVICES GRADIENT BOX --- */}
-      <section className="max-w-7xl mx-auto px-8 py-20">
-        <div className="bg-linear-to-r from-purple-600 via-purple-400 to-[#fde68a] rounded-tl-[60px] rounded-br-[60px] p-12 text-black">
-          <div className="flex flex-col md:flex-row justify-between items-start mb-12 gap-6">
-            <h2 className="text-4xl font-black max-w-sm leading-tight">
-              WE OFFER LEADING SOLUTIONS IN
-            </h2>
-            <p className="max-w-md text-sm font-semibold opacity-80">
-              We provide cutting-edge IT strategies and seamless digital
-              integration to help your business thrive in the modern era.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {/* Primary Card */}
-            <div className="bg-[#121212] text-white p-8 rounded-2xl flex flex-col gap-4 shadow-2xl">
-              <BiCodeAlt className="text-4xl text-purple-400" />
-              <h3 className="font-bold text-lg leading-tight uppercase">
-                Web Design & Development
-              </h3>
-              <p className="text-xs text-gray-400 italic">Included with:</p>
-              <ul className="text-xs space-y-2 opacity-70">
-                <li className="flex items-center gap-2">
-                  <FiCheckCircle className="text-purple-500" /> Custom Layouts
-                </li>
-                <li className="flex items-center gap-2">
-                  <FiCheckCircle className="text-purple-500" /> Responsive
-                  Design
-                </li>
-                <li className="flex items-center gap-2">
-                  <FiCheckCircle className="text-purple-500" /> SEO Optimization
-                </li>
-              </ul>
-              <button className="mt-4 bg-purple-600 w-full py-2 rounded-full text-xs font-bold uppercase tracking-wider">
-                Details
-              </button>
-            </div>
-
-            {/* Icon Only Cards */}
-            {[
-              { icon: <BiLayer />, title: "Business Solution" },
-              { icon: <BiMobileAlt />, title: "App Development" },
-              { icon: <BiShieldAlt />, title: "Systems & Security" },
-            ].map((item, idx) => (
-              <div
-                key={idx}
-                className="bg-black/20 backdrop-blur-sm hover:bg-black/30 transition p-8 rounded-2xl flex flex-col items-center justify-center text-center gap-4 border border-black/10"
-              >
-                <div className="text-4xl mb-2">{item.icon}</div>
-                <h3 className="font-bold text-sm uppercase">{item.title}</h3>
-                <button className="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center text-white mt-4">
-                  <FiArrowRight />
-                </button>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
+      {/* Our Teams */}
+      <OurTeamSection />
+      {/* --- SERVICES Leading Solutions BOX --- */}
+      <LeadingSolutionSection/>
       {/* --- PORTFOLIO SECTION --- */}
       <section className="bg-[#f8f8f8] text-black py-24 rounded-tl-[100px] rounded-br-[100px]">
         <div className="max-w-7xl mx-auto px-8">
