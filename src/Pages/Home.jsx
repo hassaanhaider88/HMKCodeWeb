@@ -1,6 +1,4 @@
-import { RxCross1 } from "react-icons/rx";
-import { RxHamburgerMenu } from "react-icons/rx";
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   FiArrowRight,
   FiArrowLeft,
@@ -11,127 +9,20 @@ import {
   FiLinkedin,
   FiCheckCircle,
 } from "react-icons/fi";
-import {
-  BiCodeAlt,
-  BiLayer,
-  BiMobileAlt,
-  BiShieldAlt,
-  BiChevronDown,
-} from "react-icons/bi";
+import { BiCodeAlt, BiLayer, BiMobileAlt, BiShieldAlt } from "react-icons/bi";
+import NavBar from "../Components/NavBar";
+import HeroSection from "../Components/HeroSection";
 
 const HomePage = () => {
   const [openFaq, setOpenFaq] = useState(0);
-  const [MenuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className="bg-[#0b0b0b] text-white min-h-screen font-sans">
       {/* --- NAVIGATION --- */}
-      <nav className="flex  items-center justify-between px-8 py-6 max-w-7xl mx-auto">
-        <div className="flex items-center gap-2 text-2xl font-bold tracking-tighter">
-          <div className="w-8 h-8 bg-purple-600 rounded-lg rotate-12"></div>
-          Innotec
-        </div>
-        <div className="hidden md:flex gap-12 text-sm font-medium text-gray-300">
-          <a href="#" className="hover:text-purple-400">
-            About us
-          </a>
-          <a href="#" className="hover:text-purple-400">
-            What We Do
-          </a>
-          <a href="#" className="hover:text-purple-400">
-            Our Results
-          </a>
-          <a href="#" className="hover:text-purple-400">
-            Insights
-          </a>
-          <a href="#" className="hover:text-purple-400">
-            Contact
-          </a>
-        </div>
-        <button className="bg-[#f3e3d3] hidden md:flex text-black px-10 py-4 rounded-full font-bold text-sm">
-          Try It Free
-        </button>
-        <button
-          onClick={() => setMenuOpen(!MenuOpen)}
-          className="text-3xl duration-300 transition-all cursor-pointer md:hidden block"
-        >
-          {!MenuOpen ? <RxHamburgerMenu /> : <RxCross1 />}
-        </button>
-        {/* mobile Div menu */}
-        {
-            MenuOpen ? <div className="flex flex-col gap-5 right-0 px-10 py-20 z-20 absolute bg-[#000000de] top-20 w-full h-full">
-          <div className="flex flex-col gap-6 text-sm font-medium text-gray-300">
-            <a href="#" className="hover:text-purple-400">
-              About us
-            </a>
-            <a href="#" className="hover:text-purple-400">
-              What We Do
-            </a>
-            <a href="#" className="hover:text-purple-400">
-              Our Results
-            </a>
-            <a href="#" className="hover:text-purple-400">
-              Insights
-            </a>
-            <a href="#" className="hover:text-purple-400">
-              Contact
-            </a>
-          </div>
-          <button className="bg-[#f3e3d3] w-fit flex text-black px-10 py-4 rounded-full font-bold text-sm">
-            Try It Free
-          </button>
-        </div> : ""
-        }
-      </nav>
+      <NavBar />
 
       {/* --- HERO SECTION --- */}
-      <section className="max-w-7xl mx-auto px-8 py-16 grid lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <h1 className="text-6xl font-extrabold leading-[1.1] mb-8">
-            YOUR <span className="text-purple-500 italic">PARTNER</span> FOR{" "}
-            <br />
-            COMPREHENSIVE <span className="text-gray-500">IT SOLUTIONS</span>
-          </h1>
-          <div className="relative max-w-md group mb-10">
-            <input
-              type="text"
-              placeholder="Search your choice"
-              className="w-full bg-[#1a1a1a] border border-gray-800 rounded-full py-4 px-6 outline-none focus:border-purple-500 transition-all"
-            />
-            <button className="absolute right-2 top-2 bg-[#f3e3d3] text-black px-6 py-2 rounded-full flex items-center gap-2 font-bold hover:bg-white transition-colors">
-              Let's Talk <FiArrowRight />
-            </button>
-          </div>
-          <div className="flex gap-10 text-gray-400">
-            <div>
-              <p className="text-2xl font-bold text-white">100+</p>
-              <p className="text-xs uppercase tracking-widest">
-                Total Projects
-              </p>
-            </div>
-            <div>
-              <p className="text-2xl font-bold text-white">25k+</p>
-              <p className="text-xs uppercase tracking-widest">
-                Client Support
-              </p>
-            </div>
-            <div>
-              <p className="text-2xl font-bold text-white">4.8/5</p>
-              <p className="text-xs uppercase tracking-widest">Reviews</p>
-            </div>
-          </div>
-        </div>
-        <div className="relative flex justify-center">
-          <div className="absolute -z-10 w-72 h-72 bg-purple-600/20 blur-[100px] top-0 right-0"></div>
-          <div className="bg-linear-to-br from-purple-600 to-transparent p-0.5 rounded-tl-[100px] rounded-br-[100px]">
-            <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800"
-              alt="Professional"
-              className="rounded-tl-[100px] rounded-br-[100px] w-full max-w-md object-cover h-125"
-            />
-          </div>
-        </div>
-      </section>
+      <HeroSection />
 
       {/* --- SERVICES GRADIENT BOX --- */}
       <section className="max-w-7xl mx-auto px-8 py-20">
