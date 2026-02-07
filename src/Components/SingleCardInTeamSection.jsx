@@ -6,7 +6,7 @@ const SingleCardInTeamSection = ({ cardData, index, activeIndex }) => {
 
   return (
     <div
-      className={`bg-[#202020] rounded-3xl px-4 py-6 cursor-pointer overflow-hidden transition-all duration-300
+      className={`bg-[#202020] rounded-3xl  px-4 py-6 cursor-pointer overflow-hidden transition-all duration-300
       ${isActive ? "bg-[#2C2B31]" : "hover:bg-[#2C2B31] group"}`}
     >
       {/* Logo + Heading */}
@@ -15,7 +15,7 @@ const SingleCardInTeamSection = ({ cardData, index, activeIndex }) => {
         ${isActive ? "flex-row" : "flex-col group-hover:flex-row"}`}
       >
         <span className="h-16 w-16 rounded-full p-3 bg-[#2A2D37] flex justify-center items-center transition-transform duration-300 group-hover:scale-110">
-          <BsFillTerminalFill size={40} />
+          <cardData.icon className="h-8 w-8" />
         </span>
 
         <h1 className="text-2xl font-semibold">{cardData.title}</h1>

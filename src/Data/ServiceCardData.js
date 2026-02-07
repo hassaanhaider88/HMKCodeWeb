@@ -1,6 +1,11 @@
+import { CgSmartHomeWashMachine } from "react-icons/cg"; 
+import { MdSecurity } from "react-icons/md"; 
+import { BsFillCloudsFill } from "react-icons/bs"; 
+import { BsFillTerminalFill } from "react-icons/bs"; 
 export const cardsData = [
   {
     title: "Custom Software Development",
+    icon : BsFillTerminalFill,
     description:
       "We engineer scalable web and enterprise applications tailored to complex business workflows, ensuring performance, security, and long-term maintainability.",
     items: [
@@ -11,6 +16,7 @@ export const cardsData = [
   },
   {
     title: "Cloud Computing Solutions",
+    icon : BsFillCloudsFill ,
     description:
       "Design and deployment of secure, cost-optimized cloud infrastructure that improves availability, scalability, and operational efficiency.",
     items: [
@@ -21,6 +27,7 @@ export const cardsData = [
   },
   {
     title: "Cyber Security Services",
+    icon  : MdSecurity,
     description:
       "Comprehensive security frameworks to protect applications, networks, and sensitive data against modern cyber threats and vulnerabilities.",
     items: [
@@ -31,6 +38,7 @@ export const cardsData = [
   },
   {
     title: "AI & ML Integration",
+    icon : CgSmartHomeWashMachine ,
     description:
       "Implementation of intelligent systems using real-world data to automate processes, enhance decision-making, and unlock predictive insights.",
     items: [

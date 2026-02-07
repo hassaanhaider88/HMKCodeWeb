@@ -64,3 +64,29 @@ body {
   object-fit: contain;
   pointer-events: none;
 }
+
+
+.ServiceCardDiv{
+  background:
+    radial-gradient(
+      circle at 20% 30%,
+      rgba(255, 255, 255, 0.15) 0 60px,
+      transparent 61px
+    ),
+    radial-gradient(
+      circle at 70% 20%,
+      rgba(255, 255, 255, 0.12) 0 80px,
+      transparent 81px
+    ),
+    radial-gradient(
+      circle at 60% 70%,
+      rgba(255, 255, 255, 0.1) 0 100px,
+      transparent 101px
+    ),
+    radial-gradient(
+      circle at 30% 80%,
+      rgba(255, 255, 255, 0.12) 0 70px,
+      transparent 71px
+    ),
+    linear-gradient(#04e1ec 10%, #7b8e8f 50%, #055846 100%);
+}

@@ -7,8 +7,8 @@ import { cardsData } from "../Data/ServiceCardData";
 
 const LeadingSolutionSection = () => {
   return (
-    <section className="px-6  mt-10">
-      <div className="bg-linear-to-r from-[#8C4DF6] text-white via-[#A36BEA] to-[#04E1EC] relative rounded-2xl p-12 ">
+    <section className="px-6  mt-10 mb-10">
+      <div className="ServiceCardDiv relative rounded-2xl p-12 ">
         <div
           style={{ borderRadius: "0px 0px 100px 0px" }}
           className="TopLeftDiv absolute top-0 left-0 w-100 bg-[#191919] py-4"
