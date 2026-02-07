@@ -38,7 +38,9 @@ const OurTeamSection = () => {
           style={{ borderRadius: "0px 0px 0px 100px" }}
           className="OutTeamTagOnRightTop right-0 pr-5 flex justify-end items-center w-full md:w-[75%] pt-2 pb-4 bg-[#0B0B0B]  absolute"
         >
-          <p className="text-2xl sm:translate-x-0 translate-x-10 font-semibold">Our Team</p>
+          <p className="text-2xl sm:translate-x-0 translate-x-10 font-semibold">
+            Our Team
+          </p>
           <div className="flex gap-3 translate-x-30 sm:translate-x-6 items-center justify-center">
             <div className="h-16 w-16 bg-red-500 rounded-full"></div>
             <div className="h-16 w-16 -translate-x-8 bg-red-600 rounded-full"></div>
