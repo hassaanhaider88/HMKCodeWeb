@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 body {
   box-sizing: border-box;
   font-family:
@@ -11,30 +12,55 @@ body {
 }
 
 /* HTML: <div class="inverted-radius"></div> */
-.inverted-radius {
-  --r: 100px;
-  --s: 30px;
-  --x: 70px;
-  --y: 50px;
-
+.card-wrapper {
+  position: relative;
   width: 500px;
   aspect-ratio: 1;
-  z-index: 1;
-  background: #3fb8af;
-  border-radius: var(--r);
-  clip-path: polygon(
-    78.5% 0.46%,
-    100% 0.75%,
-    100% 100%,
-    0% 100%,
-    0% 51.56%,
-    21.46% 50.81%,
-    21.46% 26%,
-    36.94% 26%,
-    36.94% 11.65%,
-    53.18% 10.86%,
-    53% 0.17%
+}
+
+/* Shape */
+.inverted-radius {
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(
+      circle at 20% 30%,
+      rgba(255, 255, 255, 0.15) 0 60px,
+      transparent 61px
+    ),
+    radial-gradient(
+      circle at 70% 20%,
+      rgba(255, 255, 255, 0.12) 0 80px,
+      transparent 81px
+    ),
+    radial-gradient(
+      circle at 60% 70%,
+      rgba(255, 255, 255, 0.1) 0 100px,
+      transparent 101px
+    ),
+    radial-gradient(
+      circle at 30% 80%,
+      rgba(255, 255, 255, 0.12) 0 70px,
+      transparent 71px
+    ),
+    linear-gradient(#04e1ec 10%, #7b8e8f 50%, #055846 100%);
+  clip-path: path(
+    "M390 5 Q445 5 495 8 L495 495 L5 495 L5 260 Q5 240 40 240 L110 240 Q135 240 135 210 L135 150 Q135 120 170 120 L220 120 Q250 120 250 85 L250 40 Q250 15 280 15 L360 8 Q380 6 390 5 Z"
   );
-  background-color: #d8c4c4;
-  mask-repeat: no-repeat;
+  border-radius: 100px;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+/* Person */
+.person {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 85%;
+  z-index: 2;
+  /* ABOVE shape */
+  object-fit: contain;
+  pointer-events: none;
 }

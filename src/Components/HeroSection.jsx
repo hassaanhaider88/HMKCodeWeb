@@ -28,10 +28,10 @@ const HeroSection = () => {
         <div className="Text">
           <p className="text-sm text-gray-400">
             Our team of experts is ready to assist you with tailored IT
-            solutions <br /> that meet your unique  business needs. Whether you're
-            facing technical <br /> challenges or seeking  to enhance your IT
-            infrastructure, we're here to <br /> help. Contact us today to discuss how
-            we can support your business <br /> growth and success.
+            solutions <br /> that meet your unique business needs. Whether
+            you're facing technical <br /> challenges or seeking to enhance your
+            IT infrastructure, we're here to <br /> help. Contact us today to
+            discuss how we can support your business <br /> growth and success.
           </p>
         </div>
         <div className="BrandsThreee w-full flex items-center sm:gap-12 gap-6 mt-12 text-8xl text-gray-500">
@@ -48,12 +48,10 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div className="inverted-radius">
-          <img
-            className="w-full overflow-visible h-full object-cover z-10"
-            src="./HassaanLaptopCarrer.png"
-            alt=""
-          />
+        <div className="card-wrapper">
+          <div className="inverted-radius"></div>
+
+          <img className="person" src="./HassaanLaptopCarrer.png" alt="" />
         </div>
       </div>
     </section>

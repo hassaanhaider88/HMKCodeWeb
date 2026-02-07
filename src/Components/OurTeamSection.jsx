@@ -53,11 +53,11 @@ const OurTeamSection = () => {
           </div>
         </div>
         <img
-          src="./HMKCodeWebLogo.png"
-          className="bg-cover bg-fixed w-full h-[65vh]"
+          src="https://i.pinimg.com/videos/thumbnails/originals/d1/58/5f/d1585f6707b1d2d2d1a0f12ba8838c76.0000000.jpg"
+          className="bg-cover bg-fixed w-full h-screen object-cover"
           alt=""
         />
-        <div className="BottomSidedThreeCards w-full pb-6 flex flex-wrap gap-4 justify-evenly items-center">
+        <div className="BottomSidedThreeCards absolute bottom-0 w-full pb-6 flex flex-wrap gap-4 justify-evenly items-center">
           <div className="ButtonAndHeadingCard flex flex-col gap-10 ">
             <button className="py-3 w-fit px-10 bg-[#04E1EC] rounded-4xl ">
               Why Choose Us
