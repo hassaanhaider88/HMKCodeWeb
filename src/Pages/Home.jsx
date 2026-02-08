@@ -15,6 +15,7 @@ import HeroSection from "../Components/HeroSection";
 import OurTeamSection from "../Components/OurTeamSection";
 import LeadingSolutionSection from "../Components/LeadingSolutionSection";
 import OurClients from "../Components/OurClients";
+import WorkSection from "../Components/OurWorkingSection";
 
 const HomePage = () => {
   const [openFaq, setOpenFaq] = useState(0);
@@ -32,6 +33,8 @@ const HomePage = () => {
       <LeadingSolutionSection />
       {/* Our Clients Section */}
       <OurClients />
+      {/* /* --- OUR WORK SECTION --- */} 
+      <WorkSection />
       {/* --- PORTFOLIO SECTION --- */}
       <section className="bg-[#f8f8f8] text-black py-24 rounded-tl-[100px] rounded-br-[100px]">
         <div className="max-w-7xl mx-auto px-8">

@@ -1,42 +1,43 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.work-wrapper {
+  background: linear-gradient(135deg, #8b5cf6 0%, #c084fc 40%, #f3d3c1 100%);
+  padding: 4rem;
+  position: relative;
+
+  clip-path: polygon(
+    100% 0,
+    100% 35%,
+    100% 90%,
+    65% 91%,
+    53% 99%,
+    0 100%,
+    0 10%,
+    31% 9%,
+    44% 0
+  );
+  border-radius: 32px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width: 700px) {
+  .work-wrapper {
+    clip-path: none;
+    border-radius: 24px; /* optional, keeps it clean on mobile */
   }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.ImgOne {
+  clip-path: polygon(47% 0, 100% 1%, 100% 100%, 0 100%, 0 17%, 34% 16%);
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.ImgFour {
+  clip-path: polygon(
+    50% 0%,
+    100% 0,
+    100% 35%,
+    100% 81%,
+    58% 84%,
+    47% 99%,
+    0 100%,
+    0% 70%,
+    0% 35%,
+    0 0
+  );
 }
