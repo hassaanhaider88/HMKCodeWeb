@@ -18,9 +18,9 @@ const OurClients = () => {
         various industries, delivering innovative solutions that drive success
         and growth.
       </p>
-      <div class="md:-mr-16 mt-5 md:mt-10">
+      <div className="md:-mr-16 mt-5 md:mt-10">
         <img
-          class="max-w-xs md:max-w-sm"
+          className="max-w-xs md:max-w-sm"
           src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/trusted-brand/image-fc6e.png"
           alt=""
         />

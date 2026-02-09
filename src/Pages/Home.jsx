@@ -16,6 +16,8 @@ import OurTeamSection from "../Components/OurTeamSection";
 import LeadingSolutionSection from "../Components/LeadingSolutionSection";
 import OurClients from "../Components/OurClients";
 import WorkSection from "../Components/OurWorkingSection";
+import OurTestimonials from "../Components/OurTestimonials";
+import WhyColloborateSection from "../Components/WhyColloborateSection";
 
 const HomePage = () => {
   const [openFaq, setOpenFaq] = useState(0);
@@ -33,74 +35,12 @@ const HomePage = () => {
       <LeadingSolutionSection />
       {/* Our Clients Section */}
       <OurClients />
-      {/* /* --- OUR WORK SECTION --- */} 
+      {/* /* --- OUR WORK SECTION --- */}
       <WorkSection />
-      {/* --- PORTFOLIO SECTION --- */}
-      <section className="bg-[#f8f8f8] text-black py-24 rounded-tl-[100px] rounded-br-[100px]">
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="flex justify-between items-end mb-12">
-            <div>
-              <span className="bg-purple-100 text-purple-600 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
-                Portfolio
-              </span>
-              <h2 className="text-4xl font-black mt-4 leading-tight">
-                EXPLORE OUR WORK THAT <br /> WE'RE PROUDLY PRESENTING
-              </h2>
-            </div>
-            <div className="flex gap-4">
-              <button className="w-14 h-14 rounded-full border border-gray-300 flex items-center justify-center hover:bg-black hover:text-white transition">
-                <FiArrowLeft size={24} />
-              </button>
-              <button className="w-14 h-14 rounded-full bg-purple-600 text-white flex items-center justify-center hover:scale-105 transition">
-                <FiArrowRight size={24} />
-              </button>
-            </div>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative">
-              <div className="bg-gray-200 h-112.5 rounded-[40px] overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800"
-                  className="w-full h-full object-cover"
-                  alt="Project"
-                />
-              </div>
-            </div>
-            <div className="space-y-6">
-              <h3 className="text-4xl font-bold">PLATFORM-X</h3>
-              <p className="text-gray-500 leading-relaxed max-w-md">
-                A revolutionary enterprise platform designed to synchronize
-                cross-departmental data with real-time AI analytics.
-              </p>
-              <div className="grid grid-cols-3 gap-6 pt-6">
-                <div className="border-l-4 border-purple-600 pl-4">
-                  <p className="text-3xl font-black">+40%</p>
-                  <p className="text-xs uppercase text-gray-400 font-bold">
-                    ROI
-                  </p>
-                </div>
-                <div className="border-l-4 border-purple-600 pl-4">
-                  <p className="text-3xl font-black">+30%</p>
-                  <p className="text-xs uppercase text-gray-400 font-bold">
-                    Speed
-                  </p>
-                </div>
-                <div className="border-l-4 border-purple-600 pl-4">
-                  <p className="text-3xl font-black">+25%</p>
-                  <p className="text-xs uppercase text-gray-400 font-bold">
-                    Growth
-                  </p>
-                </div>
-              </div>
-              <button className="mt-8 bg-purple-600 text-white px-8 py-3 rounded-full font-bold">
-                Explore Project
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      {/* Our tesimonials goes her */}
+      <OurTestimonials />
+      {/* why colloborate with us  */}
+      <WhyColloborateSection/>
       {/* --- FAQ SECTION --- */}
       <section className="max-w-4xl mx-auto px-8 py-24 text-center">
         <span className="text-xs font-bold text-purple-500 uppercase tracking-widest">
