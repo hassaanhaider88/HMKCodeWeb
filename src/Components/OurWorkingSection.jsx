@@ -1,8 +1,14 @@
+/* eslint-disable no-unused-vars */
 import { FaReact } from "react-icons/fa";
 import { BiArrowBack } from "react-icons/bi";
 import { BsArrowUpRight } from "react-icons/bs";
+import ProjectData from "../Data/ProjectsData";
+import { useState } from "react";
 
 export default function WorkSection() {
+  const [NextProjectIndex, setNextProjectIndex] = useState(0);
+  let CurretProjectToShow = ProjectData[NextProjectIndex];
+
   return (
     <div id="Services" className="w-full py-50 px-10 mt-20 bg-[#0B0B0B]">
       <div className="w-full   rounded-4xl px-10 relative min-h-[250vh] bg-[#F0F0F0]">
@@ -89,8 +95,7 @@ export default function WorkSection() {
             {/* project heading and navigation buttons */}
             <div className="flex md:flex-row flex-col w-full justify-center gap-5 md:justify-between items-center ">
               <h2 className="text-4xl text-black md:w-1/2 w-full font-semibold">
-                Project heading Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Quos, perferendis!
+                {CurretProjectToShow.projectSecondHeading}
               </h2>
               <div className="flex md:w-1/2 w-full gap-5 justify-end items-center">
                 <button className="h-16 border-[#DFDCD7] border-2 cursor-pointer hover:scale-90 duration-300 transition-all w-16 flex justify-center items-center rounded-full ">
@@ -105,7 +110,7 @@ export default function WorkSection() {
               {/* image and navigator */}
               <div className="ImgeAndProductNavigatorButtons md:w-1/2 w-full relative">
                 <img
-                  src="https://i.pinimg.com/originals/9e/4b/9b/9e4b9b040ad791fc615a903b5cff703c.jpg"
+                  src={CurretProjectToShow.projectImage[0]}
                   className="h-60 ImgFour rounded-2xl shadow-2xl w-140"
                   alt=""
                 />
@@ -119,17 +124,16 @@ export default function WorkSection() {
               <div className="md:w-1/2 w-full flex gap-5 justify-between items-center">
                 {/* First heading description and Button */}
                 <div className="flex justify-start flex-col items-start gap-2 ">
-                  <h1 className="text-4xl text-[#1DDFEC]">Heading Goes</h1>
+                  <h1 className="text-4xl text-[#1DDFEC]">
+                    {CurretProjectToShow.projectFirstHeading}
+                  </h1>
                   <p className="text-sm font-semibold text-gray-500">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Officiis incidunt iure, velit cumque ipsam officia expedita
-                    sapiente assumenda ipsum voluptatum. Quas non, tenetur
-                    reiciendis possimus omnis id delectus! Voluptatibus nobis
-                    cum earum minus facere in quo corrupti dolor debitis nostrum
-                    dolorem perferendis qui at molestias, exercitationem nemo
-                    laudantium similique assumenda quae
+                    {CurretProjectToShow.projectDescription}
                   </p>
-                  <button className="active:scale-95  duration-200 transition-all cursor-pointer w-fit bg-[#f3e3d3] text-black px-5 py-1 rounded-full group flex items-center gap-2 font-bold hover:bg-white">
+                  <button
+                    onClick={() => window.open(CurretProjectToShow.projectLink)}
+                    className="active:scale-95  duration-200 transition-all cursor-pointer w-fit bg-[#f3e3d3] text-black px-5 py-1 rounded-full group flex items-center gap-2 font-bold hover:bg-white"
+                  >
                     Let's Talk{" "}
                     <span className="rounded-full group-hover:rotate-0  rotate-180 group-hover:translate-x-2 group-hover:scale-105 duration-300 transition-all p-3 text-white bg-black">
                       <BsArrowUpRight size={20} />
@@ -142,9 +146,13 @@ export default function WorkSection() {
                     Stack And <br /> Tools Used
                   </h1>
                   <div className="AllStacDiv flex flex-col justify-center items-center gap-2 py-3">
-                    {[1, 2, 3, 3, 5, 5].map((stack) => (
-                      <FaReact size={30} color="#07BEC8" />
-                    ))}
+                    {CurretProjectToShow.projectTechStack.map(
+                      (stack, index) => (
+                        <span key={index} className="text-sm font-bold">
+                          {stack}
+                        </span>
+                      ),
+                    )}
                   </div>
                 </div>
               </div>
