@@ -1,13 +1,7 @@
-import { useState } from "react";
 import {
-  FiArrowRight,
-  FiArrowLeft,
-  FiPlus,
-  FiMinus,
   FiInstagram,
   FiFacebook,
   FiLinkedin,
-  FiCheckCircle,
 } from "react-icons/fi";
 import { BiCodeAlt, BiLayer, BiMobileAlt, BiShieldAlt } from "react-icons/bi";
 import NavBar from "../Components/NavBar";
@@ -18,10 +12,9 @@ import OurClients from "../Components/OurClients";
 import WorkSection from "../Components/OurWorkingSection";
 import OurTestimonials from "../Components/OurTestimonials";
 import WhyColloborateSection from "../Components/WhyColloborateSection";
+import FAQsSection from "../Components/FAQsSection";
 
 const HomePage = () => {
-  const [openFaq, setOpenFaq] = useState(0);
-
   return (
     <div className="bg-[#0b0b0b] text-white min-h-screen font-sans">
       {/* --- NAVIGATION --- */}
@@ -40,43 +33,9 @@ const HomePage = () => {
       {/* Our tesimonials goes her */}
       <OurTestimonials />
       {/* why colloborate with us  */}
-      <WhyColloborateSection/>
+      <WhyColloborateSection />
       {/* --- FAQ SECTION --- */}
-      <section className="max-w-4xl mx-auto px-8 py-24 text-center">
-        <span className="text-xs font-bold text-purple-500 uppercase tracking-widest">
-          Have Info?
-        </span>
-        <h2 className="text-4xl font-black mt-2 mb-16">
-          FREQUENTLY ASKED QUESTIONS
-        </h2>
-        <div className="space-y-4 text-left">
-          {[1, 2, 3, 4, 5, 6].map((i) => (
-            <div
-              key={i}
-              className={`border border-gray-800 rounded-2xl p-6 cursor-pointer transition-all ${openFaq === i ? "bg-[#1a1a1a] border-purple-500" : "bg-[#121212]"}`}
-              onClick={() => setOpenFaq(openFaq === i ? 0 : i)}
-            >
-              <div className="flex justify-between items-center">
-                <span className="font-bold">
-                  What kind of IT solutions do you provide?
-                </span>
-                {openFaq === i ? (
-                  <FiMinus className="text-purple-500" />
-                ) : (
-                  <FiPlus />
-                )}
-              </div>
-              {openFaq === i && (
-                <p className="mt-4 text-sm text-gray-400 leading-relaxed">
-                  We offer a full spectrum of services including custom software
-                  development, cloud infrastructure, cybersecurity audits, and
-                  strategic digital transformation consulting.
-                </p>
-              )}
-            </div>
-          ))}
-        </div>
-      </section>
+      <FAQsSection />
 
       {/* --- FOOTER --- */}
       <footer className="bg-linear-to-r from-purple-900 to-[#121212] py-20">
