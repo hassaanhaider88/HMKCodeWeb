@@ -1,36 +1,9 @@
 import { MdOutlineGroups } from "react-icons/md";
 import { BsArrowDown } from "react-icons/bs";
-import React from "react";
-import { BsArrowRight } from "react-icons/bs";
+import TeamData from "../Data/TeamData";
 import { VscGitMerge } from "react-icons/vsc";
 
 const OurTeamSection = () => {
-  const OurTeamData = [
-    {
-      hoverName: "Hassaan Haider",
-      ImageUrl: "",
-    },
-    {
-      hoverName: "Hassaan Haider",
-      ImageUrl: "",
-    },
-    {
-      hoverName: "Hassaan Haider",
-      ImageUrl: "",
-    },
-    {
-      hoverName: "Hassaan Haider",
-      ImageUrl: "",
-    },
-    {
-      hoverName: "Hassaan Haider",
-      ImageUrl: "",
-    },
-    {
-      hoverName: "Hassaan Haider",
-      ImageUrl: "",
-    },
-  ];
   return (
     <div className="min-h-screen px-16 py-6 md:px-5 md:py-10 w-full rounded-3xl">
       <div className="OurTaemCard  relative w-full bg-red-50 h-full ">
@@ -42,13 +15,33 @@ const OurTeamSection = () => {
             Our Team
           </p>
           <div className="flex gap-3 translate-x-30 sm:translate-x-6 items-center justify-center">
-            <div className="h-16 w-16 bg-red-500 rounded-full"></div>
+            {TeamData.map((Member, index) => {
+              return (
+                <div
+                  key={index}
+                  onClick={() => {
+                    window.open(Member.MemGithubLink);
+                  }}
+                  className={`h-16 relative group cursor-pointer duration-200 transition-all hover:ring-2 hover:scale-110 w-16 ${index !== 0 && `-translate-x-${index * 8}`} bg-red-500 rounded-full`}
+                >
+                  <img
+                    src={Member.MemImage}
+                    alt={Member.MemName}
+                    className="w-full h-full object-cover rounded-full"
+                  />
+                  <span className="text-black group-hover:block hidden whitespace-nowrap py-2 px-3  h-fit w-fit -top-12 rounded-xl bg-white -left-5 absolute">
+                    {Member.MemName}
+                  </span>
+                </div>
+              );
+            })}
+            {/* <div className="h-16 w-16 bg-red-500 rounded-full"></div>
             <div className="h-16 w-16 -translate-x-8 bg-red-600 rounded-full"></div>
             <div className="h-16 w-16 -translate-x-16 bg-red-700 rounded-full"></div>
             <div className="h-16 w-16 -translate-x-24 bg-red-800 rounded-full"></div>
-            <div className="h-16 w-16 -translate-x-32 bg-red-800 rounded-full"></div>
+            <div className="h-16 w-16 -translate-x-32 bg-red-800 rounded-full"></div> */}
           </div>
-          <div className="h-16 sm:flex hidden w-16 -translate-x-8  -rotate-40 border border-white rounded-full bg-black text-white  justify-center items-center">
+          <div className="h-16 cursor-pointer active:scale-90 duration-300 transition-all sm:flex hidden w-16 -translate-x-8  -rotate-40 border border-white rounded-full bg-black text-white  justify-center items-center">
             <BsArrowDown size={24} />
           </div>
         </div>

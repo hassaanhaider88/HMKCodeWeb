@@ -6,7 +6,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 const FAQsSection = () => {
   const [openFaq, setOpenFaq] = useState(0);
   return (
-    <section className="max-w-4xl flex-col gap-5 flex justify-center mx-auto px-8 py-24 text-center">
+    <section id="Faqs" className="max-w-4xl flex-col gap-5 flex justify-center mx-auto px-8 py-24 text-center">
       <div className="w-full flex justify-center">
         <button className=" cursor-pointer w-fit  bg-[#f3e3d3] text-black px-4 py-1 rounded-full group flex items-center gap-2 font-bold hover:bg-white transition-colors">
           Have a question?

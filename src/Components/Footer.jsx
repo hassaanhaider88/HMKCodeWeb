@@ -4,7 +4,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="relative px-20 py-20 overflow-visible">
+    <footer id="Footer" className="relative px-20 py-20 overflow-visible">
       {/* CLIPPED BACKGROUND LAYER */}
       <div className="FooterClipPath absolute inset-0 bg-linear-to-r from-purple-900 to-[#121212] z-0"></div>
       {/* CONTENT ABOVE SHAPE */}

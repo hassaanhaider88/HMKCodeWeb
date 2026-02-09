@@ -15,19 +15,19 @@ const NavBar = () => {
         />
       </div>
       <div className="hidden md:flex gap-12 text-md font-medium text-gray-300">
-        <a href="#" className="hover:text-[#07BEC8] font-semibold">
+        <a href="#Footer" className="hover:text-[#07BEC8] font-semibold">
           About us
         </a>
-        <a href="#" className="hover:text-[#07BEC8] font-semibold">
+        <a href="#Services" className="hover:text-[#07BEC8] font-semibold">
           What We Do
         </a>
-        <a href="#" className="hover:text-[#07BEC8] font-semibold">
+        <a href="#Clients" className="hover:text-[#07BEC8] font-semibold">
           Our Results
         </a>
-        <a href="#" className="hover:text-[#07BEC8] font-semibold">
+        <a href="#Projects" className="hover:text-[#07BEC8] font-semibold">
           Insights
         </a>
-        <a href="#" className="hover:text-[#07BEC8] font-semibold">
+        <a href="#Faqs" className="hover:text-[#07BEC8] font-semibold">
           Contact
         </a>
       </div>
@@ -47,19 +47,19 @@ const NavBar = () => {
       {MenuOpen ? (
         <div className="flex flex-col gap-5 right-0 px-10 py-20 z-20 absolute bg-[#000000de] top-20 w-full h-full">
           <div className="flex flex-col gap-6 text-sm font-medium text-gray-300">
-            <a href="#" className="hover:text-purple-400">
+            <a href="#Footer" className="hover:text-[#07BEC8] font-semibold">
               About us
             </a>
-            <a href="#" className="hover:text-purple-400">
+            <a href="#Services" className="hover:text-[#07BEC8] font-semibold">
               What We Do
             </a>
-            <a href="#" className="hover:text-purple-400">
+            <a href="#Clients" className="hover:text-[#07BEC8] font-semibold">
               Our Results
             </a>
-            <a href="#" className="hover:text-purple-400">
+            <a href="#Projects" className="hover:text-[#07BEC8] font-semibold">
               Insights
             </a>
-            <a href="#" className="hover:text-purple-400">
+            <a href="#Faqs" className="hover:text-[#07BEC8] font-semibold">
               Contact
             </a>
           </div>

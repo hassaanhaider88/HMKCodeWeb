@@ -4,7 +4,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 
 export default function WorkSection() {
   return (
-    <div className="w-full py-50 px-10 mt-20 bg-[#0B0B0B]">
+    <div id="Services" className="w-full py-50 px-10 mt-20 bg-[#0B0B0B]">
       <div className="w-full   rounded-4xl px-10 relative min-h-[250vh] bg-[#F0F0F0]">
         <div className=" py-20 absolute w-fit  -top-60 px-4 flex justify-center">
           <div className="work-wrapper  w-full  p-10 md:p-14 relative">
@@ -71,7 +71,10 @@ export default function WorkSection() {
           </div>
         </div>
         {/* all Projects slider shwo here  */}
-        <div className="AllProjects absolute bottom-5 pt-5 left-1/2 -translate-x-1/2 w-full min-h-screen bg-[#F0F0F0]">
+        <div
+          id="Projects"
+          className="AllProjects absolute bottom-5 pt-5 left-1/2 -translate-x-1/2 w-full min-h-screen bg-[#F0F0F0]"
+        >
           {/* here will all  projects will shown  */}
           <div className="w-full flex mt-10 px-10 gap-5 justify-start items-center flex-col">
             {/* top button jsut for style  */}
