@@ -1,77 +1,93 @@
 const ProjectData = [
     {
-        projectFirstHeading: "Project 1",
-        projectSecondHeading: "Full Stack E‑commerce Store",
-        projectDescription: "A fully functional online store with product catalog, cart, authentication, and payment integration.",
+        projectFirstHeading:
+            "Scalable Full Stack Commerce Platform With Secure Payments And Admin Control",
+        projectSecondHeading: "Modern E-commerce Web Application",
+        projectDescription:
+            "A production-grade online store featuring product management, Stripe payments, authentication, order tracking, and a powerful admin dashboard for store operations.",
         projectImage: [
-            "https://source.unsplash.com/random/400x200?ecommerce",
-            "https://source.unsplash.com/random/400x200?shopping",
-            "https://source.unsplash.com/random/400x200?store"
+            "https://i.pinimg.com/originals/1c/16/46/1c16465097de22892fde8fd91c793bb5.jpg",
+            "https://i.pinimg.com/originals/e9/58/c5/e958c59f124c1f973e70c3db8ec5b2b4.jpg",
+            "https://i.pinimg.com/originals/1f/82/a7/1f82a757eee4c771c5503831ece9b949.jpg"
         ],
-        projectLink: "#",
-        projectTechStack: ["React", "Node.js", "MongoDB"]
+        projectLink: "https://commercejs.com/",
+        projectTechStack: ["React", "Node.js", "MongoDB", "Stripe"]
     },
-    {
-        projectFirstHeading: "Project 2",
-        projectSecondHeading: "SaaS Task Management Dashboard",
-        projectDescription: "A collaborative task manager with user roles, real‑time updates, and project timelines.",
-        projectImage: [
-            "https://source.unsplash.com/random/400x200?dashboard",
-            "https://source.unsplash.com/random/400x200?analytics",
-            "https://source.unsplash.com/random/400x200?workspace"
-        ],
-        projectLink: "#",
-        projectTechStack: ["React", "Express.js", "PostgreSQL"]
-    },
-    {
-        projectFirstHeading: "Project 3",
-        projectSecondHeading: "Real Estate Search Platform",
-        projectDescription: "A property listing and search tool with filters, maps, and agent dashboards. Based on real use cases.",
-        projectImage: [
-            "https://source.unsplash.com/random/400x200?realestate",
-            "https://source.unsplash.com/random/400x200?house",
-            "https://source.unsplash.com/random/400x200?property"
-        ],
-        projectLink: "#",
-        projectTechStack: ["Next.js", "Node.js", "MongoDB"]
-    },
-    {
-        projectFirstHeading: "Project 4",
-        projectSecondHeading: "Social Community App",
-        projectDescription: "A social platform where users can post updates, follow others, and chat in real time.",
-        projectImage: [
-            "https://source.unsplash.com/random/400x200?social",
-            "https://source.unsplash.com/random/400x200?community",
-            "https://source.unsplash.com/random/400x200?chat"
-        ],
-        projectLink: "#",
-        projectTechStack: ["React", "Socket.io", "Firebase"]
-    },
-    {
-        projectFirstHeading: "Project 5",
-        projectSecondHeading: "Company CRM System",
-        projectDescription: "A customer relationship management tool with leads tracking, analytics, and user permissions.",
-        projectImage: [
-            "https://source.unsplash.com/random/400x200?crm",
-            "https://source.unsplash.com/random/400x200?analytics",
-            "https://source.unsplash.com/random/400x200?business"
-        ],
-        projectLink: "#",
-        projectTechStack: ["React", "Node.js", "MySQL"]
-    },
-    {
-        projectFirstHeading: "Project 6",
-        projectSecondHeading: "Interactive Blog Platform",
-        projectDescription: "A dynamic blogging site with editor, comments, user profiles, and SEO optimization.",
-        projectImage: [
-            "https://source.unsplash.com/random/400x200?blog",
-            "https://source.unsplash.com/random/400x200?writing",
-            "https://source.unsplash.com/random/400x200?content"
-        ],
-        projectLink: "#",
-        projectTechStack: ["Next.js", "Tailwind CSS", "Sanity CMS"]
-    }
 
-]
+    {
+        projectFirstHeading:
+            "Collaborative SaaS Productivity Dashboard With Realtime Updates And Role Permissions",
+        projectSecondHeading: "Task Management SaaS Platform",
+        projectDescription:
+            "A multi-user task and project management system supporting team roles, Kanban boards, activity logs, deadlines, and live updates using WebSockets.",
+        projectImage: [
+            "https://i.pinimg.com/originals/bf/67/bd/bf67bdc3b01e83e9261ac344efea2fc4.jpg",
+            "https://i.pinimg.com/originals/a4/ce/60/a4ce6029b65f0b269516d9f9e2ec3365.jpg",
+            "https://i.pinimg.com/originals/e2/32/57/e23257ff65c144de64e3284a1441e517.jpg"
+        ],
+        projectLink: "https://trello.com/",
+        projectTechStack: ["React", "Express.js", "PostgreSQL", "Socket.io"]
+    },
+
+    {
+        projectFirstHeading:
+            "Advanced Property Listing And Search System With Filters Maps And Dashboards",
+        projectSecondHeading: "Real Estate Marketplace Platform",
+        projectDescription:
+            "A real estate discovery platform where users can browse properties, apply smart filters, view map locations, and agents manage listings through a dashboard.",
+        projectImage: [
+            "https://image.thum.io/get/width/800/https://zillow.com/",
+            "https://image.thum.io/get/width/800/https://realtor.com/",
+            "https://image.thum.io/get/width/800/https://airbnb.com/"
+        ],
+        projectLink: "https://zillow.com/",
+        projectTechStack: ["Next.js", "Node.js", "MongoDB", "Google Maps API"]
+    },
+
+    {
+        projectFirstHeading:
+            "Realtime Social Networking Application With User Profiles Messaging And Activity Feeds",
+        projectSecondHeading: "Community Social Media App",
+        projectDescription:
+            "A social platform allowing users to create profiles, share posts, follow others, like content, and chat in realtime with notifications and media uploads.",
+        projectImage: [
+            "https://image.thum.io/get/width/800/https://twitter.com/",
+            "https://image.thum.io/get/width/800/https://discord.com/",
+            "https://image.thum.io/get/width/800/https://facebook.com/"
+        ],
+        projectLink: "https://discord.com/",
+        projectTechStack: ["React", "Firebase", "Socket.io", "Cloud Storage"]
+    },
+
+    {
+        projectFirstHeading:
+            "Enterprise Customer Relationship Management System With Analytics Leads And Permissions",
+        projectSecondHeading: "Business CRM Dashboard",
+        projectDescription:
+            "A business CRM solution for managing leads, customers, sales pipelines, performance analytics, and team access levels in an enterprise workflow.",
+        projectImage: [
+            "https://image.thum.io/get/width/800/https://salesforce.com/",
+            "https://image.thum.io/get/width/800/https://hubspot.com/",
+            "https://image.thum.io/get/width/800/https://zoho.com/crm/"
+        ],
+        projectLink: "https://hubspot.com/",
+        projectTechStack: ["React", "Node.js", "MySQL", "Chart.js"]
+    },
+
+    {
+        projectFirstHeading:
+            "SEO Optimized Content Publishing Platform With Editor Profiles And Commenting System",
+        projectSecondHeading: "Modern Blogging Platform",
+        projectDescription:
+            "A high-performance blog platform with rich text editor, categories, comments, user accounts, and server-side rendering for SEO optimization.",
+        projectImage: [
+            "https://image.thum.io/get/width/800/https://medium.com/",
+            "https://image.thum.io/get/width/800/https://hashnode.com/",
+            "https://image.thum.io/get/width/800/https://dev.to/"
+        ],
+        projectLink: "https://medium.com/",
+        projectTechStack: ["Next.js", "Tailwind CSS", "Sanity CMS", "Vercel"]
+    }
+];
 
 export default ProjectData;

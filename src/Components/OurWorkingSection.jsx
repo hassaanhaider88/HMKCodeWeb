@@ -8,6 +8,30 @@ import { useState } from "react";
 export default function WorkSection() {
   const [NextProjectIndex, setNextProjectIndex] = useState(0);
   let CurretProjectToShow = ProjectData[NextProjectIndex];
+  const [CurrentShowImageIndex, setCurrentShowImageIndex] = useState(0);
+  let CurrentShowImgeindex =
+    CurretProjectToShow.projectImage[CurrentShowImageIndex];
+
+  const handleClickFarWard = () => {
+    if (NextProjectIndex == ProjectData.length - 1) {
+      setNextProjectIndex(0);
+    } else {
+      setNextProjectIndex((pre) => pre + 1);
+    }
+    setCurrentShowImageIndex(0);
+  };
+  const handleClickBackWard = () => {
+    if (NextProjectIndex == 0) {
+      setNextProjectIndex(ProjectData.length - 1);
+    } else {
+      setNextProjectIndex((pre) => pre - 1);
+    }
+    setCurrentShowImageIndex(0);
+  };
+
+  const handleImageNavigatorCick = (indx) => {
+    setCurrentShowImageIndex(indx);
+  };
 
   return (
     <div id="Services" className="w-full py-50 px-10 mt-20 bg-[#0B0B0B]">
@@ -95,13 +119,19 @@ export default function WorkSection() {
             {/* project heading and navigation buttons */}
             <div className="flex md:flex-row flex-col w-full justify-center gap-5 md:justify-between items-center ">
               <h2 className="text-4xl text-black md:w-1/2 w-full font-semibold">
-                {CurretProjectToShow.projectSecondHeading}
+                {CurretProjectToShow.projectFirstHeading}
               </h2>
               <div className="flex md:w-1/2 w-full gap-5 justify-end items-center">
-                <button className="h-16 border-[#DFDCD7] border-2 cursor-pointer hover:scale-90 duration-300 transition-all w-16 flex justify-center items-center rounded-full ">
+                <button
+                  onClick={handleClickBackWard}
+                  className="h-16 border-[#DFDCD7] border-2 cursor-pointer hover:scale-90 duration-300 transition-all w-16 flex justify-center items-center rounded-full "
+                >
                   <BiArrowBack size={40} color="#DFDCD7" />
                 </button>
-                <button className="h-16 border-[#1DDFEC] rotate-180 border-2 cursor-pointer hover:scale-95 duration-300 transition-all w-16 flex justify-center items-center rounded-full ">
+                <button
+                  onClick={handleClickFarWard}
+                  className="h-16 border-[#1DDFEC] rotate-180 border-2 cursor-pointer hover:scale-95 duration-300 transition-all w-16 flex justify-center items-center rounded-full "
+                >
                   <BiArrowBack size={40} color="#1DDFEC" />
                 </button>
               </div>
@@ -110,13 +140,17 @@ export default function WorkSection() {
               {/* image and navigator */}
               <div className="ImgeAndProductNavigatorButtons md:w-1/2 w-full relative">
                 <img
-                  src={CurretProjectToShow.projectImage[0]}
+                  preload="true"
+                  src={CurrentShowImgeindex}
                   className="h-60 ImgFour rounded-2xl shadow-2xl w-140"
                   alt=""
                 />
                 <div className="Buttons cursor-pointer absolute z-20 bottom-0 right-2 w-fit py-2 px-4 rounded-3xl flex gap-2">
-                  {[1, 2, 23, 3, 4, 4].map((item, e) => (
-                    <span className="w-5 hover:scale-95 duration-300 transition-all h-5 rounded-full bg-gray-400"></span>
+                  {CurretProjectToShow.projectImage.map((_, indx) => (
+                    <span
+                      onClick={() => handleImageNavigatorCick(indx)}
+                      className="w-5 hover:scale-95 duration-300 transition-all h-5 rounded-full bg-gray-400"
+                    ></span>
                   ))}
                 </div>
               </div>
@@ -125,7 +159,7 @@ export default function WorkSection() {
                 {/* First heading description and Button */}
                 <div className="flex justify-start flex-col items-start gap-2 ">
                   <h1 className="text-4xl text-[#1DDFEC]">
-                    {CurretProjectToShow.projectFirstHeading}
+                    {CurretProjectToShow.projectSecondHeading}
                   </h1>
                   <p className="text-sm font-semibold text-gray-500">
                     {CurretProjectToShow.projectDescription}

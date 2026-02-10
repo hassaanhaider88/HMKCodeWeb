@@ -31,7 +31,7 @@ const WhyColloborateSection = () => {
               <div>
                 <h1 className="text-lg font-bold">Expertise & Experience</h1>
                 <p className="text-[12px]">
-                  Our team brings deep industry knowledge and years of
+                With  Deep industry knowledge and years of
                   experience.
                 </p>
               </div>
@@ -41,7 +41,7 @@ const WhyColloborateSection = () => {
               <div>
                 <h1 className="text-lg font-bold">Tailored Solutions</h1>
                 <p className="text-[12px]">
-                  We customize our approach to meet your specific business
+                  Customize  approach to meet your specific business
                   needs.
                 </p>
               </div>
