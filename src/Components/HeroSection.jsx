@@ -5,7 +5,7 @@ import { SiDell } from "react-icons/si";
 
 const HeroSection = () => {
   return (
-    <section className="px-8 py-16 flex justify-center items-center md:flex-row flex-col gap-10">
+    <section className="px-8 md:py-16 py-10  flex  justify-center items-center md:flex-row flex-col gap-30">
       <div>
         <h1 className="md:text-6xl text-4xl text-nowrap font-extrabold leading-[1.1] mb-8">
           YOUR <span className="text-[#07BEC8] italic">PARTNER</span> FOR

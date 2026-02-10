@@ -11,7 +11,7 @@ const OurTeamSection = () => {
           style={{ borderRadius: "0px 0px 0px 100px" }}
           className="OutTeamTagOnRightTop right-0 pr-5 flex justify-end items-center w-full md:w-[75%] pt-2 pb-4 bg-[#0B0B0B]  absolute"
         >
-          <p className="text-2xl sm:translate-x-0 translate-x-10 font-semibold">
+          <p className="text-2xl  sm:block hidden translate-x-10 font-semibold">
             Our Team
           </p>
           <div className="flex gap-3 translate-x-30 sm:translate-x-6 items-center justify-center">
@@ -35,11 +35,6 @@ const OurTeamSection = () => {
                 </div>
               );
             })}
-            {/* <div className="h-16 w-16 bg-red-500 rounded-full"></div>
-            <div className="h-16 w-16 -translate-x-8 bg-red-600 rounded-full"></div>
-            <div className="h-16 w-16 -translate-x-16 bg-red-700 rounded-full"></div>
-            <div className="h-16 w-16 -translate-x-24 bg-red-800 rounded-full"></div>
-            <div className="h-16 w-16 -translate-x-32 bg-red-800 rounded-full"></div> */}
           </div>
           <div className="h-16 cursor-pointer active:scale-90 duration-300 transition-all sm:flex hidden w-16 -translate-x-8  -rotate-40 border border-white rounded-full bg-black text-white  justify-center items-center">
             <BsArrowDown size={24} />
@@ -52,7 +47,7 @@ const OurTeamSection = () => {
         />
         <div className="BottomSidedThreeCards absolute bottom-0 w-full pb-6 flex flex-wrap gap-4 justify-evenly items-center">
           <div className="ButtonAndHeadingCard flex flex-col gap-10 ">
-            <button className="py-3 w-fit px-10 bg-[#04E1EC] rounded-4xl ">
+            <button className="py-3 md:block hidden w-fit px-10 bg-[#04E1EC] rounded-4xl ">
               Why Choose Us
             </button>
             <div className="py-4 bg-[#191919] rounded-4xl px-10 text-3xl font-semibold">

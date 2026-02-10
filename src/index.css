@@ -21,6 +21,14 @@ html {
   aspect-ratio: 1;
 }
 
+@media screen and (max-width: 550px) {
+  .card-wrapper {
+  position: relative;
+  width: 300px;
+  aspect-ratio: 1;
+}
+}
+
 /* Shape */
 .inverted-radius {
   width: 100%;

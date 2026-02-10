@@ -63,7 +63,7 @@ const NavBar = () => {
               Contact
             </a>
           </div>
-          <button className="relative cursor-pointer bg-[#f3e3d3] text-black px-4 py-1 rounded-full group flex items-center gap-2 font-bold hover:bg-white transition-colors">
+          <button className="relative w-fit cursor-pointer bg-[#f3e3d3] text-black px-4 py-1 rounded-full group flex items-center gap-2 font-bold hover:bg-white transition-colors">
             Try It Free
             <span className="rounded-full group-hover:rotate-180 group-hover:translate-x-2 group-hover:scale-105 duration-300 transition-all p-3 text-white bg-black">
               <BsArrowUpRight size={20} className="font-bold" />
