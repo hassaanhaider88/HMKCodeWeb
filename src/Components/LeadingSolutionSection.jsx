@@ -8,7 +8,7 @@ import { cardsData } from "../Data/ServiceCardData";
 const LeadingSolutionSection = () => {
   return (
     <section className="px-6  mt-10 mb-10">
-      <div className="ServiceCardDiv relative rounded-2xl p-12 ">
+      <div className="ServiceCardDiv relative rounded-2xl p-6 md:p-12 ">
         <div
           style={{ borderRadius: "0px 0px 100px 0px" }}
           className="TopLeftDiv absolute top-0 left-0 w-100 bg-[#191919] py-4"
@@ -37,7 +37,7 @@ const LeadingSolutionSection = () => {
           </div>
         </div>
 
-        <div className="ServicesCards w-full  flex h-[60vh]  gap-5 justify-between items-center">
+        <div className="ServicesCards w-full px-6 overflow-x-scroll overflow-y-hidden flex min-h-screen md:h-[60vh]  gap-5 justify-between items-center">
           {cardsData.map((card, index) => (
             <SingleCardInTeamSection
               key={index}

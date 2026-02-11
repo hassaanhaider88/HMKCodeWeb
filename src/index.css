@@ -23,10 +23,10 @@ html {
 
 @media screen and (max-width: 550px) {
   .card-wrapper {
-  position: relative;
-  width: 300px;
-  aspect-ratio: 1;
-}
+    position: relative;
+    width: 300px;
+    aspect-ratio: 1;
+  }
 }
 
 /* Shape */
@@ -54,7 +54,13 @@ html {
       rgba(255, 255, 255, 0.12) 0 70px,
       transparent 71px
     ),
-    linear-gradient(#04e1ec 10%, #7b8e8f 50%, #055846 100%);
+    radial-gradient(
+      circle,
+      rgba(4, 225, 236, 1) 0%,
+      rgba(113, 229, 235, 1) 34%,
+      rgba(78, 122, 115, 1) 68%,
+      rgba(19, 94, 97, 1) 88%
+    );
   clip-path: path(
     "M390 5 Q445 5 495 8 L495 495 L5 495 L5 260 Q5 240 40 240 L110 240 Q135 240 135 210 L135 150 Q135 120 170 120 L220 120 Q250 120 250 85 L250 40 Q250 15 280 15 L360 8 Q380 6 390 5 Z"
   );
@@ -99,4 +105,25 @@ html {
       transparent 71px
     ),
     linear-gradient(#04e1ec 10%, #7b8e8f 50%, #055846 100%);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1ddfec;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1ddeecdc;
 }

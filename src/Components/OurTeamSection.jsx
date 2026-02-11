@@ -6,46 +6,49 @@ import { VscGitMerge } from "react-icons/vsc";
 const OurTeamSection = () => {
   return (
     <div className="min-h-screen px-16 py-6 md:px-5 md:py-10 w-full rounded-3xl">
-      <div className="OurTaemCard  relative w-full bg-red-50 h-full ">
+      <div className="OurTaemCard rounded-3xl overflow-hidden relative w-full bg-red-50 h-full ">
         <div
           style={{ borderRadius: "0px 0px 0px 100px" }}
-          className="OutTeamTagOnRightTop right-0 pr-5 flex justify-end items-center w-full md:w-[75%] pt-2 pb-4 bg-[#0B0B0B]  absolute"
+          className="OutTeamTagOnRightTop z-30 right-0 pr-5 flex justify-end items-center w-full md:w-[75%] pt-2 pb-4 bg-[#0B0B0B]  absolute"
         >
-          <p className="text-2xl  sm:block hidden translate-x-10 font-semibold">
+          <p className="text-2xl   -translate-x-10 font-semibold">
             Our Team
           </p>
-          <div className="flex gap-3 translate-x-30 sm:translate-x-6 items-center justify-center">
-            {TeamData.map((Member, index) => {
-              return (
-                <div
-                  key={index}
-                  onClick={() => {
-                    window.open(Member.MemGithubLink);
-                  }}
-                  className={`h-16 relative group cursor-pointer duration-200 transition-all hover:ring-2 hover:scale-110 w-16 ${index !== 0 && `-translate-x-${index * 8}`} bg-red-500 rounded-full`}
-                >
-                  <img
-                    src={Member.MemImage}
-                    alt={Member.MemName}
-                    className="w-full h-full object-cover rounded-full"
-                  />
-                  <span className="text-black group-hover:block hidden whitespace-nowrap py-2 px-3  h-fit w-fit -top-12 rounded-xl bg-white -left-5 absolute">
-                    {Member.MemName}
-                  </span>
-                </div>
-              );
-            })}
+          <div className="flex gap-3 items-center justify-center relative">
+            {TeamData.map((Member, index) => (
+              <div
+                key={index}
+                onClick={() => window.open(Member.MemGithubLink)}
+                style={{
+                  transform: `translateX(-${index * 26}px)`,
+                  zIndex: TeamData.length - index,
+                }}
+                className="h-16 w-16 relative group cursor-pointer duration-200 transition-all hover:ring-2 hover:scale-110 rounded-full overflow-hidden"
+              >
+                <img
+                  src={Member.MemImage}
+                  alt={Member.MemName}
+                  className="w-full h-full object-cover"
+                />
+
+                <span className="absolute hidden group-hover:block whitespace-nowrap py-2 px-3 -top-12 left-1/2 -translate-x-1/2 rounded-xl bg-white text-black text-sm shadow-lg">
+                  {Member.MemName}
+                </span>
+              </div>
+            ))}
           </div>
+
           <div className="h-16 cursor-pointer active:scale-90 duration-300 transition-all sm:flex hidden w-16 -translate-x-8  -rotate-40 border border-white rounded-full bg-black text-white  justify-center items-center">
             <BsArrowDown size={24} />
           </div>
         </div>
         <img
           src="https://i.pinimg.com/videos/thumbnails/originals/d1/58/5f/d1585f6707b1d2d2d1a0f12ba8838c76.0000000.jpg"
-          className="bg-cover bg-fixed w-full h-screen object-cover"
+          className="bg-cover bg-fixed w-full h-screen object-bottom"
           alt=""
         />
-        <div className="BottomSidedThreeCards absolute bottom-0 w-full pb-6 flex flex-wrap gap-4 justify-evenly items-center">
+        <div className="absolute top-0 w-full h-full rounded-3xl bg-[#3333338c] " />
+        <div className="BottomSidedThreeCards z-20 absolute bottom-0 w-full pb-6 flex flex-wrap gap-4 justify-evenly items-center">
           <div className="ButtonAndHeadingCard flex flex-col gap-10 ">
             <button className="py-3 md:block hidden w-fit px-10 bg-[#04E1EC] rounded-4xl ">
               Why Choose Us

@@ -2,8 +2,33 @@ import { TiVendorMicrosoft } from "react-icons/ti";
 import { SiCisco } from "react-icons/si";
 import { BsArrowUpRight } from "react-icons/bs";
 import { SiDell } from "react-icons/si";
+import { useState } from "react";
 
 const HeroSection = () => {
+  const [UserEmail, setUserEmail] = useState("");
+  const [EmailSubmitLoading, setEmailSubmitLoading] = useState(false);
+
+  const handleEmailSubmit = async () => {
+    if (!UserEmail) {
+      return;
+    } else {
+      setEmailSubmitLoading(true);
+      try {
+        const res = await fetch(
+          `https://getsrc-be.onrender.com/api/save-email?email=${UserEmail}`,
+        );
+        const data = await res.json();
+        console.log(data);
+      } catch (error) {
+        console.log(error);
+        alert("Something Wents Wrong....");
+      } finally {
+        setEmailSubmitLoading(false);
+        setUserEmail("");
+      }
+    }
+  };
+
   return (
     <section className="px-8 md:py-16 py-10  flex  justify-center items-center md:flex-row flex-col gap-30">
       <div>
@@ -14,12 +39,19 @@ const HeroSection = () => {
         </h1>
         <div className="relative max-w-md group mb-10">
           <input
-            type="text"
+            type="email"
+            required
+            value={UserEmail}
+            onChange={(e) => setUserEmail(e.target.value)}
             placeholder="Enter Your Problem...."
             className="w-full bg-[#1a1a1a] border border-gray-800 rounded-full py-3 px-6 outline-none focus:border-[#07BEC8] transition-all"
           />
-          <button className="absolute active:scale-105 duration-200 transition-all cursor-pointer right-0 top-1/2 transform -translate-y-1/2 bg-[#f3e3d3] text-black px-4 py-1 rounded-full group flex items-center gap-2 font-bold hover:bg-white">
-            Let's Talk{" "}
+          <button
+            onClick={handleEmailSubmit}
+            disabled={EmailSubmitLoading}
+            className={`${EmailSubmitLoading ? "cursor-not-allowed" : "cursor-pointer "} absolute active:scale-105 duration-200 transition-all right-0 top-1/2 transform -translate-y-1/2 bg-[#f3e3d3] text-black px-4 py-1 rounded-full group flex items-center gap-2 font-bold hover:bg-white`}
+          >
+            {EmailSubmitLoading ? "Sending....." : "Let's Talk"}
             <span className="rounded-full  group-hover:rotate-180 group-hover:translate-x-2 group-hover:scale-105 duration-300 transition-all p-3 text-white bg-black">
               <BsArrowUpRight size={20} />
             </span>

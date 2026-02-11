@@ -6,7 +6,7 @@ const SingleCardInTeamSection = ({ cardData, index, activeIndex }) => {
 
   return (
     <div
-      className={`bg-[#202020] rounded-3xl  px-4 py-6 cursor-pointer overflow-hidden transition-all duration-300
+      className={` rounded-3xl shrink-0 w-70 bg-[#2A2D37]   px-4 py-6 cursor-pointer overflow-hidden transition-all duration-300
       ${isActive ? "bg-[#2C2B31]" : "hover:bg-[#2C2B31] group"}`}
     >
       {/* Logo + Heading */}
