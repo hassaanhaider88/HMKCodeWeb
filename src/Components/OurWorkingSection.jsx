@@ -149,7 +149,7 @@ export default function WorkSection() {
                   {CurretProjectToShow.projectImage.map((_, indx) => (
                     <span
                       onClick={() => handleImageNavigatorCick(indx)}
-                      className="w-5 hover:scale-95 duration-300 transition-all h-5 rounded-full bg-gray-400"
+                      className={`w-5 hover:scale-95 duration-300 transition-all h-5 rounded-full  ${CurrentShowImageIndex == indx ? "bg-[#1ddfec] scale-105" : "bg-gray-400"} `}
                     ></span>
                   ))}
                 </div>
@@ -179,11 +179,12 @@ export default function WorkSection() {
                   <h1>
                     Stack And <br /> Tools Used
                   </h1>
-                  <div className="AllStacDiv flex flex-col justify-center items-center gap-2 py-3">
+                  <div className="AllStacDiv flex flex-col justify-center items-center gap-3 py-3">
                     {CurretProjectToShow.projectTechStack.map(
-                      (stack, index) => (
+                      (StackIcon, index) => (
                         <span key={index} className="text-sm font-bold">
-                          {stack}
+                          <StackIcon.icon size={40} />
+                          <h1 className="text-[12px]">{StackIcon.Name}</h1>
                         </span>
                       ),
                     )}
