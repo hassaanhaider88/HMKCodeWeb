@@ -140,10 +140,10 @@ export default function WorkSection() {
                 <img
                   preload="true"
                   src={CurrentShowImgeindex}
-                  className="h-60 ImgFour rounded-2xl shadow-2xl w-140"
+                  className="h-100 ProjectImageClipPath rounded-2xl shadow-2xl w-140"
                   alt=""
                 />
-                <div className="Buttons cursor-pointer absolute z-20 bottom-0 right-2 w-fit py-2 px-4 rounded-3xl flex gap-2">
+                <div className="Buttons cursor-pointer absolute z-20 -bottom-2 right-2 w-fit py-2 px-4 rounded-3xl flex gap-2">
                   {CurretProjectToShow.projectImage.map((_, indx) => (
                     <span
                       onClick={() => handleImageNavigatorCick(indx)}

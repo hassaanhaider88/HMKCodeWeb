@@ -9,6 +9,11 @@ import { TbBrandVscode } from "react-icons/tb";
 import { FaNode } from "react-icons/fa";
 import { SiMocha } from "react-icons/si";
 import DotEnvGen from "../assets/DotEnvGen.png";
+import SVGCopire from '../assets/SVGCopire.png'
+import SVGCodepierCover from "../assets/SVGCodeCopierCover.png"
+import PinterestURICopire from "../assets/PinterestURICopire.png"
+import PinterestExtCover from "../assets/PinterestExtCover.png"
+import PinCopierImg from "../assets/PinCopierImg.png"
 const ProjectData = [
   {
     projectFirstHeading:
@@ -19,7 +24,6 @@ const ProjectData = [
     projectImage: [
       DotEnvGen,
       "https://ik.imagekit.io/hassaan/Dot_Env_Gen_By_Hassaan_Haider_Iyp69txQd",
-      "https://i.pinimg.com/originals/1f/82/a7/1f82a757eee4c771c5503831ece9b949.jpg",
     ],
     projectLink:
       "https://marketplace.visualstudio.com/manage/publishers/dotenvgen",
@@ -37,8 +41,8 @@ const ProjectData = [
     projectDescription:
       "A Chrome extension that allows users to copy SVG code of React Icons directly from https://react-icons.github.io/ website  for easy customization and use in your projects. It provides a convenient way to access and utilize React Icons without needing to visit the official library or search for icons manually.",
     projectImage: [
-      "https://i.pinimg.com/originals/bf/67/bd/bf67bdc3b01e83e9261ac344efea2fc4.jpg",
-      "https://i.pinimg.com/originals/a4/ce/60/a4ce6029b65f0b269516d9f9e2ec3365.jpg",
+      SVGCopire,
+      SVGCodepierCover,
       "https://i.pinimg.com/originals/e2/32/57/e23257ff65c144de64e3284a1441e517.jpg",
     ],
     projectLink: "https://github.com/hassaanhaider88/Extensions",
@@ -62,9 +66,9 @@ const ProjectData = [
     projectDescription:
       "A browser extension that allows users to easily copy high-definition image URLs from the Pinterest website. With this extension, users can quickly access and share the direct links to their favorite Pinterest images without the need for manual searching or downloading, streamlining the process of sharing visual content from Pinterest.",
     projectImage: [
-      "https://image.thum.io/get/width/800/https://zillow.com/",
-      "https://image.thum.io/get/width/800/https://realtor.com/",
-      "https://image.thum.io/get/width/800/https://airbnb.com/",
+      PinterestURICopire,
+      PinterestExtCover,
+      PinCopierImg,
     ],
     projectLink: "https://github.com/hassaanhaider88/Extensions",
     projectTechStack: [
