@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-import { FaReact } from "react-icons/fa";
 import { BiArrowBack } from "react-icons/bi";
 import { BsArrowUpRight } from "react-icons/bs";
 import ProjectData from "../Data/ProjectsData";
