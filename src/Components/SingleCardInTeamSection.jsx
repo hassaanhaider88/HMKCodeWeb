@@ -6,7 +6,7 @@ const SingleCardInTeamSection = ({ cardData, index, activeIndex }) => {
 
   return (
     <div
-      className={` rounded-3xl shrink-0 w-70 bg-[#2A2D37]   px-4 py-6 cursor-pointer overflow-hidden transition-all duration-300
+      className={` rounded-3xl shrink-0 w-90 bg-[#2A2D37]   px-4 py-6 cursor-pointer overflow-hidden transition-all duration-300
       ${isActive ? "bg-[#2C2B31]" : "hover:bg-[#2C2B31] group"}`}
     >
       {/* Logo + Heading */}
@@ -59,6 +59,12 @@ const SingleCardInTeamSection = ({ cardData, index, activeIndex }) => {
       {/* Button */}
       <div className="flex w-full justify-center items-center">
         <button
+          onClick={() =>
+            window.open(
+              `https://wa.me/923437117831?text=Hello!%20I%20am%20interested%20in%20your%20${cardData.title}%20services.`,
+              "_blank",
+            )
+          }
           className={`flex transition-all duration-300 justify-center items-center bg-[#1DDFEC] py-3 px-6 rounded-full gap-4 hover:scale-95
           ${isActive ? "mt-6" : "mt-20 group-hover:mt-6"}`}
         >

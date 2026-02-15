@@ -1,5 +1,5 @@
 import { FaQuoteLeft } from "react-icons/fa";
-import React from "react";
+import { testimonialsData } from "../Data/TestimonialsData";
 import { BiArrowBack } from "react-icons/bi";
 
 const OurTestimonials = () => {
@@ -22,26 +22,22 @@ const OurTestimonials = () => {
       </div>
       {/* all reviews goes here */}
       <div className="w-full flex my-10 gap-20 flex-wrap justify-between items-center">
-        {[1, 2, 3].map(() => {
+        {testimonialsData.map((testimonial, index) => {
           return (
-            <div className="py-4 flex w-87.5 pt-5 TestimonialCard flex-col gap-4 bg-gray-500 px-5 rounded-3xl">
+            <div key={index} className="py-4 flex w-87.5 pt-5 TestimonialCard flex-col gap-4 bg-gray-500 px-5 rounded-3xl">
               <FaQuoteLeft size={40} />
               <p className="text-md mt-3 font-semibold ">
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Ratione nisi excepturi beatae deserunt ea qui? Distinctio,
-                adipisci quis quisquam laborum, consequatur aperiam esse dolor
-                quas accusantium autem excepturi illum sequi ducimus
-                voluptatibus molestias incidunt ipsam ratione reprehenderit"
+                "{testimonial.detials}"
               </p>
               <div className="flex justify-evenly items-center py-5">
                 <img
                   className="w-22 ring-2 p-1 h-22 rounded-full bg-cover"
-                  src="https://i.pinimg.com/originals/9e/4b/9b/9e4b9b040ad791fc615a903b5cff703c.jpg"
+                  src={testimonial.Img}
                   alt=""
                 />
                 <div>
-                  <h1 className="font-semibold">Hassaa Haider</h1>
-                  <p className="text-sm">CEO At HMK CodeWeb</p>
+                  <h1 className="font-semibold">{testimonial.name}</h1>
+                  <p className="text-sm">{testimonial.Role}</p>
                 </div>
               </div>
             </div>

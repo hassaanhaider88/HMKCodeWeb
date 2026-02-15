@@ -1,50 +1,50 @@
-import { CgSmartHomeWashMachine } from "react-icons/cg"; 
-import { MdSecurity } from "react-icons/md"; 
-import { BsFillCloudsFill } from "react-icons/bs"; 
-import { BsFillTerminalFill } from "react-icons/bs"; 
+import { FaReact } from "react-icons/fa";
+import { SiMongodb, SiNodedotjs, SiOpenai } from "react-icons/si";
+import { BsFillCloudsFill } from "react-icons/bs";
+
 export const cardsData = [
   {
-    title: "Custom Software Development",
-    icon : BsFillTerminalFill,
+    title: "MERN Stack Web Development",
+    icon: FaReact,
     description:
-      "We engineer scalable web and enterprise applications tailored to complex business workflows, ensuring performance, security, and long-term maintainability.",
+      "We build high-performance full-stack applications using MongoDB, Express.js, React, and Node.js, delivering scalable and maintainable digital products.",
     items: [
-      "Web & SaaS Platforms",
-      "API & System Integrations",
-      "Database Architecture",
+      "Custom Web Applications",
+      "REST & GraphQL APIs",
+      "Authentication & Authorization",
     ],
   },
   {
-    title: "Cloud Computing Solutions",
-    icon : BsFillCloudsFill ,
+    title: "Backend & Database Architecture",
+    icon: SiMongodb,
     description:
-      "Design and deployment of secure, cost-optimized cloud infrastructure that improves availability, scalability, and operational efficiency.",
+      "Robust backend systems and optimized database design to ensure scalability, security, and seamless data handling for modern applications.",
+    items: [
+      "MongoDB Schema Design",
+      "Node.js & Express APIs",
+      "Performance Optimization",
+    ],
+  },
+  {
+    title: "Cloud & DevOps Solutions",
+    icon: BsFillCloudsFill,
+    description:
+      "Deployment and infrastructure management with modern DevOps practices to ensure reliability, CI/CD automation, and cloud scalability.",
     items: [
       "AWS / Azure Deployment",
-      "DevOps & CI/CD Pipelines",
-      "Cloud Migration",
+      "CI/CD Pipelines",
+      "Server & Environment Management",
     ],
   },
   {
-    title: "Cyber Security Services",
-    icon  : MdSecurity,
+    title: "AI Integration & Automation",
+    icon: SiOpenai,
     description:
-      "Comprehensive security frameworks to protect applications, networks, and sensitive data against modern cyber threats and vulnerabilities.",
+      "We integrate AI-powered solutions into web applications to automate workflows, enhance user experiences, and provide intelligent insights.",
     items: [
-      "Security Audits",
-      "Penetration Testing",
-      "Data Protection & Encryption",
-    ],
-  },
-  {
-    title: "AI & ML Integration",
-    icon : CgSmartHomeWashMachine ,
-    description:
-      "Implementation of intelligent systems using real-world data to automate processes, enhance decision-making, and unlock predictive insights.",
-    items: [
-      "Predictive Analytics",
-      "Computer Vision Systems",
-      "Natural Language Processing",
+      "Chatbots & AI Assistants",
+      "OpenAI / LLM Integration",
+      "Predictive Analytics & Automation",
     ],
   },
 ];

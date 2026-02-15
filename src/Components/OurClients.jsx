@@ -20,8 +20,8 @@ const OurClients = () => {
       </p>
       <div className="md:-mr-16 mt-5 md:mt-10">
         <img
-          className="max-w-xs md:max-w-sm"
-          src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/trusted-brand/image-fc6e.png"
+          className="w-full h-full object-cover"
+          src="./Clients.png"
           alt=""
         />
       </div>
