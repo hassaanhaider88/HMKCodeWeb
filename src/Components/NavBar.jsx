@@ -1,3 +1,4 @@
+import { MdWhatsapp } from "react-icons/md";
 import { useState } from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
@@ -31,10 +32,13 @@ const NavBar = () => {
           Contact
         </a>
       </div>
-      <button className="relative hidden md:flex cursor-pointer bg-[#f3e3d3] text-black px-4 py-1 rounded-full group  items-center gap-2 font-bold hover:bg-white transition-colors">
-        Try It Free
-        <span className="rounded-full group-hover:rotate-180 group-hover:translate-x-2 group-hover:scale-105 duration-300 transition-all p-3 text-white bg-black">
-          <BsArrowUpRight size={20} className="font-bold" />
+      <button
+        onClick={() => window.open("https://wa.me/923437117831?text=Hello%20HMK%20CodeWeb!%20I%20would%20like%20to%20inquire%20about%20your%20services.%20%20Am%20Here%20To%20Discuss%20My%20Project%20And%20How%20You%20Can%20Help%20Me.%20Looking%20Forward%20To%20Hearing%20From%20You!")}
+        className="relative hidden md:flex cursor-pointer bg-[#f3e3d3] text-black px-4 py-1 rounded-full group  items-center gap-2 font-bold hover:bg-white transition-colors"
+      >
+        Contact Us
+        <span className="rounded-full group-hover:rotate-360 group-hover:translate-x-2 group-hover:scale-105 duration-300 transition-all p-3 text-white bg-black group-hover:bg-green-500 ">
+          <MdWhatsapp size={20} className="font-bold" />
         </span>
       </button>
       <button
@@ -63,10 +67,16 @@ const NavBar = () => {
               Contact
             </a>
           </div>
-          <button className="relative w-fit cursor-pointer bg-[#f3e3d3] text-black px-4 py-1 rounded-full group flex items-center gap-2 font-bold hover:bg-white transition-colors">
-            Try It Free
-            <span className="rounded-full group-hover:rotate-180 group-hover:translate-x-2 group-hover:scale-105 duration-300 transition-all p-3 text-white bg-black">
-              <BsArrowUpRight size={20} className="font-bold" />
+          <button
+            onClick={() => window.open("wa.me/923437117831")}
+            className="relative w-fit cursor-pointer bg-[#f3e3d3] text-black px-4 py-1 rounded-full group flex items-center gap-2 font-bold hover:bg-white transition-colors"
+          >
+            Contact Us
+            <span className="rounded-full group-hover:rotate360 group-hover:translate-x-2 group-hover:scale-105 duration-300 transition-all p-3 text-white bg-black">
+              <MdWhatsapp
+                size={20}
+                className="font-bold group-hover:scale-110"
+              />
             </span>
           </button>
         </div>
