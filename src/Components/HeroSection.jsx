@@ -30,7 +30,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="px-8 md:py-16 py-10  flex  justify-center items-center md:flex-row flex-col gap-30">
+    <section className="px-8 md:py-16 bg-[#0B0B0B] py-10  flex  justify-center items-center md:flex-row flex-col gap-30">
       <div>
         <h1 className="md:text-6xl text-4xl text-nowrap font-extrabold leading-[1.1] mb-8">
           YOUR <span className="text-[#07BEC8] italic">PARTNER</span> FOR
@@ -67,9 +67,12 @@ const HeroSection = () => {
           </p>
         </div>
         <div className="BrandsThreee w-full flex items-center sm:gap-12 gap-6 mt-12 text-8xl text-gray-500">
-          <SiCisco />
+          {/* <SiCisco />
           <TiVendorMicrosoft />
-          <SiDell />
+          <SiDell /> */}
+          <img src="./PayFast.png" alt="PayFast Logo" className="w-30 grayscale h-30 bg-cover" />
+          <img src="./Daraz.png" alt="PayFast Logo" className="w-30 h-30 grayscale bg-cover" />
+          <img src="./EasyPaisa.png" alt="PayFast Logo" className="w-30 h-30 grayscale bg-cover" />
         </div>
       </div>
       <div className="flex relative justify-center">
