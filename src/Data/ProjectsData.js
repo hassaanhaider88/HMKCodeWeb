@@ -1,19 +1,24 @@
-import { BsFiletypeSvg } from "react-icons/bs"; 
+import { DiJsBadge, DiReact } from "react-icons/di";
+import { DiCss3Full } from "react-icons/di";
+import { AiOutlineHtml5 } from "react-icons/ai";
+import { BsFiletypeSvg } from "react-icons/bs";
 import { IoLogoPython } from "react-icons/io";
 import { BsFilePdf } from "react-icons/bs";
 import { FaFlask, FaPython } from "react-icons/fa";
 import { GrPinterest } from "react-icons/gr";
-import { DiJsBadge } from "react-icons/di";
 import { AiOutlineChrome } from "react-icons/ai";
 import { TbBrandVscode } from "react-icons/tb";
 import { FaNode } from "react-icons/fa";
 import { SiMocha } from "react-icons/si";
-import DotEnvGen from "../assets/DotEnvGen.png";
+import ExtensionDotEnvGen from "../assets/Extension_DotEnvGen.png";
 import SVGCopire from '../assets/SVGCopire.png'
 import SVGCodepierCover from "../assets/SVGCodeCopierCover.png"
 import PinterestURICopire from "../assets/PinterestURICopire.png"
 import PinterestExtCover from "../assets/PinterestExtCover.png"
 import PinCopierImg from "../assets/PinCopierImg.png"
+import PDFDarkerCover from "../assets/PDF-Darker-Cover.png"
+import LiveUseGlobalState from "../assets/LiveUseGlobalState.png"
+import CodeSnippet from '../assets/CodeSnippet.jpg'
 const ProjectData = [
   {
     projectFirstHeading:
@@ -22,8 +27,9 @@ const ProjectData = [
     projectDescription:
       "You can quickly generate .env files for your projects directly from GitHub repositories using this VS Code extension. It streamlines the setup process by fetching environment variables from the specified repo.It free and Off line We never use any Data.It's secure too.",
     projectImage: [
-      DotEnvGen,
       "https://ik.imagekit.io/hassaan/Dot_Env_Gen_By_Hassaan_Haider_Iyp69txQd",
+      "https://dotenvgen.gallerycdn.vsassets.io/extensions/dotenvgen/dotenv-extractor/0.0.5/1771131153023/Microsoft.VisualStudio.Services.Icons.Default",
+      ExtensionDotEnvGen
     ],
     projectLink:
       "https://marketplace.visualstudio.com/manage/publishers/dotenvgen",
@@ -43,7 +49,6 @@ const ProjectData = [
     projectImage: [
       SVGCopire,
       SVGCodepierCover,
-      "https://i.pinimg.com/originals/e2/32/57/e23257ff65c144de64e3284a1441e517.jpg",
     ],
     projectLink: "https://github.com/hassaanhaider88/Extensions",
     projectTechStack: [
@@ -94,9 +99,8 @@ const ProjectData = [
     projectDescription:
       "A web application that allows users to easily convert any PDF file into dark mode for a better reading experience in dark environments. This tool provides a convenient way to enhance readability and reduce eye strain when viewing PDF documents in low-light conditions, making it ideal for nighttime reading or working in dimly lit spaces.",
     projectImage: [
-      "https://image.thum.io/get/width/800/https://twitter.com/",
-      "https://image.thum.io/get/width/800/https://discord.com/",
-      "https://image.thum.io/get/width/800/https://facebook.com/",
+      PDFDarkerCover,
+
     ],
     projectLink: "https://pdf-darker.onrender.com/",
     projectTechStack: [
@@ -115,6 +119,65 @@ const ProjectData = [
       {
         icon: IoLogoPython,
         Name: "Pillow",
+      },
+    ],
+  },
+
+  {
+    projectFirstHeading:
+      "useGlobalState Custom React Hook For Managing Global State Across Your React Application",
+    projectSecondHeading: "useGlobalState Hook",
+    projectDescription:
+      "A custom React hook that simplifies managing global state across your React application. It provides an easy way to share and update state values across multiple components without the need for complex state management libraries like Redux or Context API. With useGlobalState, you can create a centralized state that can be accessed and modified from any component, making it easier to maintain and synchronize state throughout your application.",
+    projectImage: [
+      "https://ik.imagekit.io/hassaan/useGlobalState_TpqFg4Gc0",
+      LiveUseGlobalState
+    ],
+    projectLink: "https://www.npmjs.com/package/@hmk_codeweb88/useglobalstate",
+    projectTechStack: [
+      {
+        icon: DiJsBadge,
+        Name: "JavaScript",
+      },
+      {
+        icon: DiReact,
+        Name: "React",
+      }
+
+    ],
+  },
+
+  {
+    projectFirstHeading:
+      "CodeSnippet github Library For Sharing Your Code Snippets With The World",
+    projectSecondHeading: "CodeSnippet Library",
+    projectDescription:
+      "A GitHub library that allows developers to share their code snippets with the world. This platform provides a convenient way for programmers to showcase their coding skills, share useful code snippets, and collaborate with other developers. Users can easily browse, search, and contribute to a wide range of code snippets across various programming languages and frameworks, fostering a collaborative coding community.",
+    projectImage: [
+      CodeSnippet,
+
+    ],
+    projectLink: "https://github.com/hassaanhaider88/CodingSnippets",
+    projectTechStack: [
+      {
+        icon: FaPython,
+        Name: "Python",
+      },
+      {
+        icon: FaFlask,
+        Name: "Flask",
+      },
+      {
+        icon: AiOutlineHtml5,
+        Name: "HTMl",
+      },
+      {
+        icon: DiCss3Full,
+        Name: "CSS",
+      },
+      {
+        icon: DiJsBadge,
+        Name: "JS",
       },
     ],
   },
