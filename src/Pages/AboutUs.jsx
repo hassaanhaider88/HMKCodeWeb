@@ -15,7 +15,7 @@ export default function AboutUs() {
         <div className="relative shadow-2xl shadow-indigo-600/40 rounded-2xl overflow-hidden shrink-0">
           <img
             className="max-w-md w-full object-cover rounded-2xl"
-            src="https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9?q=80&w=451&h=451&auto=format&fit=crop"
+            src="https://i.pinimg.com/originals/02/61/96/026196c12bf94ebae9533c5d06e20bfe.jpg"
             alt=""
           />
           <div
