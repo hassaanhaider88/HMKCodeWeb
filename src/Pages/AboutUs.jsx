@@ -14,6 +14,7 @@ export default function AboutUs() {
       <section className="flex flex-col md:flex-row w-full h-full items-center justify-center gap-10 max-md:px-4">
         <div className="relative shadow-2xl shadow-indigo-600/40 rounded-2xl overflow-hidden shrink-0">
           <img
+            loading="lazy"
             className="max-w-md w-full object-cover rounded-2xl"
             src="https://i.pinimg.com/originals/02/61/96/026196c12bf94ebae9533c5d06e20bfe.jpg"
             alt=""
@@ -27,16 +28,19 @@ export default function AboutUs() {
           >
             <div className="flex -space-x-4 shrink-0">
               <img
+                loading="lazy"
                 src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200"
                 alt="image"
                 className="size-9 rounded-full border-[3px] border-white hover:-translate-y-1 transition z-1"
               />
               <img
+                loading="lazy"
                 src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200"
                 alt="image"
                 className="size-9 rounded-full border-[3px] border-white hover:-translate-y-1 transition z-2"
               />
               <img
+                loading="lazy"
                 src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&h=200&auto=format&fit=crop"
                 alt="image"
                 className="size-9 rounded-full border-[3px] border-white hover:-translate-y-1 transition z-3"

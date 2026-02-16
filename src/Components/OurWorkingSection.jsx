@@ -70,6 +70,7 @@ export default function WorkSection() {
               <div className="LeftImages w-full md:w-1/2 flex h-full  gap-4">
                 <div className="firtImgeSinlge w-full md:w-1/2 h-full ImgOne">
                   <img
+                    loading="lazy"
                     className="w-full h-full object-cover rounded-2xl"
                     src="https://i.pinimg.com/originals/9e/4b/9b/9e4b9b040ad791fc615a903b5cff703c.jpg"
                     alt=""
@@ -77,11 +78,13 @@ export default function WorkSection() {
                 </div>
                 <div className="secondImageDouble fullw-full md:w-1/2 flex flex-col gap-4">
                   <img
+                    loading="lazy"
                     className="w-full h-[75%] object-cover rounded-2xl"
                     src="https://i.pinimg.com/originals/e7/48/fa/e748fa20e132f88533fa7d422835e8b2.jpg"
                     alt=""
                   />
                   <img
+                    loading="lazy"
                     className="w-full h-[25%] object-cover rounded-2xl"
                     src="https://i.pinimg.com/originals/be/51/b5/be51b5d5d14d8f51d2a14f7d4be5ce62.jpg"
                     alt=""
@@ -90,6 +93,7 @@ export default function WorkSection() {
               </div>
               <div className="RightImages   h-full ImgFour w-full md:w-1/2">
                 <img
+                  loading="lazy"
                   className="w-full h-full object-cover rounded-2xl"
                   src="https://i.pinimg.com/originals/ca/fa/f7/cafaf7ea57a4f85cfc4abdcf22abef35.jpg"
                   alt=""
@@ -138,10 +142,11 @@ export default function WorkSection() {
               {/* image and navigator */}
               <div className="ImgeAndProductNavigatorButtons md:w-1/2 w-full relative">
                 <img
+                  loading="lazy"
                   preload="true"
                   src={CurrentShowImgeindex}
                   className="h-100 ProjectImageClipPath rounded-2xl shadow-2xl w-140"
-                  alt=""
+                  alt="ImgeAndProductNavigatorButtons"
                 />
                 <div className="Buttons cursor-pointer absolute z-20 -bottom-2 right-2 w-fit py-2 px-4 rounded-3xl flex gap-2">
                   {CurretProjectToShow.projectImage.map((_, indx) => (

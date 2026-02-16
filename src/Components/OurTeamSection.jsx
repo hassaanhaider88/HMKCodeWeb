@@ -11,9 +11,7 @@ const OurTeamSection = () => {
           style={{ borderRadius: "0px 0px 0px 100px" }}
           className="OutTeamTagOnRightTop z-30 right-0 pr-5 flex justify-end items-center w-full md:w-[75%] pt-2 pb-4 bg-[#0B0B0B]  absolute"
         >
-          <p className="text-2xl   -translate-x-10 font-semibold">
-            Our Team
-          </p>
+          <p className="text-2xl   -translate-x-10 font-semibold">Our Team</p>
           <div className="flex gap-3 items-center justify-center relative">
             {TeamData.map((Member, index) => (
               <div
@@ -26,6 +24,7 @@ const OurTeamSection = () => {
                 className="h-16 w-16 relative group cursor-pointer duration-200 transition-all hover:ring-2 hover:scale-110 rounded-full overflow-hidden"
               >
                 <img
+                  loading="lazy"
                   src={Member.MemImage}
                   alt={Member.MemName}
                   className="w-full h-full object-cover"
@@ -43,7 +42,8 @@ const OurTeamSection = () => {
           </div>
         </div>
         <img
-          src="https://i.pinimg.com/videos/thumbnails/originals/d1/58/5f/d1585f6707b1d2d2d1a0f12ba8838c76.0000000.jpg"
+        loading="lazy"
+          src="https://i.pinimg.com/originals/69/40/fa/6940fa286dc8cd6a5a7535eb9af42b4a.jpg"
           className="bg-cover bg-fixed w-full h-screen object-bottom"
           alt=""
         />

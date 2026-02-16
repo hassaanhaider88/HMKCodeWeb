@@ -1,8 +1,10 @@
 import { FaFacebookF } from "react-icons/fa";
 import { FiYoutube } from "react-icons/fi";
 import { FaLinkedinIn } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <footer id="Footer" className="relative px-20 py-20 overflow-visible">
       {/* CLIPPED BACKGROUND LAYER */}
@@ -14,10 +16,29 @@ const Footer = () => {
             <div className="Main">
               <h2 className="text-3xl font-bold mb-4">Mneu</h2>
               <ul className="text-lg">
-                <li className="mb-2 cursor-pointer">Home</li>
-                <li className="mb-2 cursor-pointer">About Us</li>
-                <li className="mb-2 cursor-pointer">Services</li>
-                <li className="mb-2 cursor-pointer">Contact Us</li>
+                <li
+                  onClick={() => navigate("/")}
+                  className="mb-2 cursor-pointer"
+                >
+                  Home
+                </li>
+                <li
+                  onClick={() => navigate("/about")}
+                  className="mb-2 cursor-pointer"
+                >
+                  About Us
+                </li>
+                <li
+                  className="mb-2 cursor-pointer"
+                >
+                  Services
+                </li>
+                <li
+                  onClick={() => navigate("/contact")}
+                  className="mb-2 cursor-pointer"
+                >
+                  Contact Us
+                </li>
               </ul>
             </div>
             <div className="Support">
@@ -51,8 +72,9 @@ const Footer = () => {
       {/* IMAGE OUTSIDE CLIP */}
       <div className="absolute right-0 bottom-8 z-20 w-[38%] flex justify-end pointer-events-none">
         <img
+          loading="lazy"
           src="./HassaanFooter.png"
-          alt=""
+          alt="Hassaan Haider Pointing to Footer"
           className="object-contain w-full max-h-200 translate-y-8"
         />
       </div>

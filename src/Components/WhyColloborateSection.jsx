@@ -31,8 +31,7 @@ const WhyColloborateSection = () => {
               <div>
                 <h1 className="text-lg font-bold">Expertise & Experience</h1>
                 <p className="text-[12px]">
-                With  Deep industry knowledge and years of
-                  experience.
+                  With Deep industry knowledge and years of experience.
                 </p>
               </div>
             </div>
@@ -41,8 +40,7 @@ const WhyColloborateSection = () => {
               <div>
                 <h1 className="text-lg font-bold">Tailored Solutions</h1>
                 <p className="text-[12px]">
-                  Customize  approach to meet your specific business
-                  needs.
+                  Customize approach to meet your specific business needs.
                 </p>
               </div>
             </div>
@@ -53,6 +51,7 @@ const WhyColloborateSection = () => {
       {/* IMAGE OUTSIDE CLIPPED LAYER */}
       <div className="absolute sm:flex bottom-10 right-0 md:w-1/2 z-20 hidden justify-center">
         <img
+          loading="lazy"
           className="object-contain w-[95%] max-h-240"
           src="./HassaanWithLaptop.png"
           alt=""

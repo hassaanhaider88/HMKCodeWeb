@@ -31,9 +31,10 @@ const OurTestimonials = () => {
               </p>
               <div className="flex justify-evenly items-center py-5">
                 <img
+                loading="lazy"
                   className="w-22 ring-2 p-1 h-22 rounded-full bg-cover"
                   src={testimonial.Img}
-                  alt=""
+                  alt="User Testimonials FOr HMK CodeWeb"
                 />
                 <div>
                   <h1 className="font-semibold">{testimonial.name}</h1>

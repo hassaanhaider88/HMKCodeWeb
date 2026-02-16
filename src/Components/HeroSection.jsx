@@ -67,12 +67,24 @@ const HeroSection = () => {
           </p>
         </div>
         <div className="BrandsThreee w-full flex items-center sm:gap-12 gap-6 mt-12 text-8xl text-gray-500">
-          {/* <SiCisco />
-          <TiVendorMicrosoft />
-          <SiDell /> */}
-          <img src="./PayFast.png" alt="PayFast Logo" className="w-30 grayscale h-30 bg-cover" />
-          <img src="./Daraz.png" alt="PayFast Logo" className="w-30 h-30 grayscale bg-cover" />
-          <img src="./EasyPaisa.png" alt="PayFast Logo" className="w-30 h-30 grayscale bg-cover" />
+          <img
+            loading="lazy"
+            src="./PayFast.png"
+            alt="PayFast Logo"
+            className="w-30 grayscale h-30 bg-cover"
+          />
+          <img
+            loading="lazy"
+            src="./Daraz.png"
+            alt="Daraz Logo"
+            className="w-30 h-30 grayscale bg-cover"
+          />
+          <img
+            loading="lazy"
+            src="./EasyPaisa.png"
+            alt="EasyPaisa Logo"
+            className="w-30 h-30 grayscale bg-cover"
+          />
         </div>
       </div>
       <div className="flex relative justify-center">
@@ -86,7 +98,12 @@ const HeroSection = () => {
         <div className="card-wrapper">
           <div className="inverted-radius"></div>
 
-          <img className="person" src="./HassaanLaptopCarrer.png" alt="" />
+          <img
+            loading="lazy"
+            className="person"
+            src="./HassaanLaptopCarrer.png"
+            alt=""
+          />
         </div>
       </div>
     </section>
