@@ -34,14 +34,14 @@ export default function AboutUs() {
               <img
                 src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200"
                 alt="image"
-                className="size-9 rounded-full border-[3px] border-white hover:-translate-y-1 transition z-[2]"
+                className="size-9 rounded-full border-[3px] border-white hover:-translate-y-1 transition z-2"
               />
               <img
                 src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&h=200&auto=format&fit=crop"
                 alt="image"
-                className="size-9 rounded-full border-[3px] border-white hover:-translate-y-1 transition z-[3]"
+                className="size-9 rounded-full border-[3px] border-white hover:-translate-y-1 transition z-3"
               />
-              <div className="flex items-center justify-center text-xs  text-white size-9 rounded-full border-[3px] border-white bg-indigo-600 hover:-translate-y-1 transition z-[4]">
+              <div className="flex items-center justify-center text-xs  text-white size-9 rounded-full border-[3px] border-white bg-indigo-600 hover:-translate-y-1 transition z-4">
                 90+
               </div>
             </div>
@@ -54,7 +54,7 @@ export default function AboutUs() {
           <h1 className="text-xl uppercase font-semibold text-slate-700">
             What we do?
           </h1>
-          <div className="w-24  h-[3px] rounded-full bg-gradient-to-r from-indigo-600 to-[#DDD9FF]"></div>
+          <div className="w-24  h-0.75 rounded-full bg-linear-to-r from-indigo-600 to-[#DDD9FF]"></div>
           <p className="mt-3">
             We are a results-driven development team focused on building modern,
             scalable digital solutions using the MERN stack and intelligent AI
